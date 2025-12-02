@@ -1,7 +1,7 @@
 import { headers } from 'next/headers'
 import { NextResponse } from 'next/server'
 import prisma from '@/lib/prisma'
-import stripe from '@/lib/payment'
+import getStripeInstance from '@/lib/payment'
 import Stripe from 'stripe'
 
 export async function POST(req: Request) {
@@ -11,6 +11,7 @@ export async function POST(req: Request) {
     let event: Stripe.Event
 
     try {
+        const stripe = getStripeInstance()
         event = stripe.webhooks.constructEvent(
             body,
             signature,

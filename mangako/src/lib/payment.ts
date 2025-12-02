@@ -1,11 +1,18 @@
 import Stripe from 'stripe'
 import { env } from './env'
 
-// Initialize Stripe with the secret key from validated environment
-const stripe = new Stripe(env.STRIPE_SECRET_KEY, {
-    apiVersion: '2025-11-17.clover',
-    typescript: true,
-})
+// Lazy initialization of Stripe to avoid build-time errors
+let stripeInstance: Stripe | null = null
+
+function getStripeInstance(): Stripe {
+    if (!stripeInstance) {
+        stripeInstance = new Stripe(env.STRIPE_SECRET_KEY, {
+            apiVersion: '2025-11-17.clover',
+            typescript: true,
+        })
+    }
+    return stripeInstance
+}
 
 export interface CoinPackage {
     id: string
@@ -57,6 +64,7 @@ export async function createPaymentIntent(packageId: string, userId: string) {
     const pkg = COIN_PACKAGES.find(p => p.id === packageId)
     if (!pkg) throw new Error('Invalid package')
 
+    const stripe = getStripeInstance()
     const paymentIntent = await stripe.paymentIntents.create({
         amount: pkg.price,
         currency: 'usd',
@@ -79,6 +87,7 @@ export async function createPaymentIntent(packageId: string, userId: string) {
 
 export async function verifyPayment(paymentIntentId: string) {
     try {
+        const stripe = getStripeInstance()
         const paymentIntent = await stripe.paymentIntents.retrieve(paymentIntentId)
         return paymentIntent.status === 'succeeded'
     } catch (error) {
@@ -87,4 +96,4 @@ export async function verifyPayment(paymentIntentId: string) {
     }
 }
 
-export default stripe
+export default getStripeInstance
