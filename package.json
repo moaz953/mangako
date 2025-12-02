@@ -1,0 +1,14 @@
+{
+    "name": "mangako-root",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "cd mangako && npm run dev",
+        "build": "cd mangako && npm run build",
+        "start": "cd mangako && npm run start",
+        "lint": "cd mangako && npm run lint"
+    },
+    "dependencies": {
+        "@netlify/next-runtime": "^5.0.0-alpha.25"
+    }
+}
