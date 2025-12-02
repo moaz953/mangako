@@ -1,0 +1,890 @@
+[2025-11-27T08:55:35.302Z] Starting uploadMultipleImages
+[2025-11-27T08:55:35.303Z] Found 4 files to upload
+[2025-11-27T08:55:35.304Z] Starting uploadImage
+[2025-11-27T08:55:35.304Z] Processing file: blob, size: 991468, type: image/png
+[2025-11-27T08:55:35.305Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-27T08:55:35.305Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764233735305-2lqq6u-blob
+[2025-11-27T08:55:35.306Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764233735305-2lqq6u-blob
+[2025-11-27T08:55:35.306Z] Starting uploadImage
+[2025-11-27T08:55:35.306Z] Processing file: blob, size: 261398, type: image/png
+[2025-11-27T08:55:35.307Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-27T08:55:35.307Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764233735307-49ydsm-blob
+[2025-11-27T08:55:35.308Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764233735307-49ydsm-blob
+[2025-11-27T08:55:35.308Z] Starting uploadImage
+[2025-11-27T08:55:35.308Z] Processing file: blob, size: 951072, type: image/png
+[2025-11-27T08:55:35.309Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-27T08:55:35.309Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764233735309-0jwv4a-blob
+[2025-11-27T08:55:35.310Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764233735309-0jwv4a-blob
+[2025-11-27T08:55:35.310Z] Starting uploadImage
+[2025-11-27T08:55:35.311Z] Processing file: blob, size: 474542, type: image/png
+[2025-11-27T08:55:35.311Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-27T08:55:35.311Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764233735311-cdxz3p-blob
+[2025-11-27T08:55:35.312Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764233735311-cdxz3p-blob
+[2025-11-27T08:55:35.326Z] Starting saveSubmission
+[2025-11-27T08:55:35.328Z] Submission saved successfully: 1764233735327
+[2025-11-27T09:40:30.944Z] Starting uploadImage
+[2025-11-27T09:40:30.992Z] Processing file: blob, size: 951084, type: image/png
+[2025-11-27T09:40:31.177Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-27T09:40:31.303Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764236431303-5zw4ff-blob
+[2025-11-27T09:40:31.631Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764236431303-5zw4ff-blob
+[2025-11-27T09:41:49.817Z] Starting uploadImage
+[2025-11-27T09:41:49.827Z] Processing file: blob, size: 951087, type: image/png
+[2025-11-27T09:41:49.828Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-27T09:41:49.828Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764236509828-ul08x9-blob
+[2025-11-27T09:41:49.829Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764236509828-ul08x9-blob
+[2025-11-27T18:08:52.893Z] Starting uploadImage
+[2025-11-27T18:08:52.894Z] Processing file: blob, size: 1046134, type: image/png
+[2025-11-27T18:08:52.895Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-27T18:08:52.896Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764266932896-fz5960-blob
+[2025-11-27T18:08:52.897Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764266932896-fz5960-blob
+[2025-11-27T18:09:38.092Z] Starting uploadImage
+[2025-11-27T18:09:38.093Z] Processing file: blob, size: 261762, type: image/png
+[2025-11-27T18:09:38.094Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-27T18:09:38.094Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764266978094-tzyj18-blob
+[2025-11-27T18:09:38.095Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764266978094-tzyj18-blob
+[2025-11-27T18:33:30.512Z] Starting uploadImage
+[2025-11-27T18:33:30.515Z] Processing file: عمل_فني_بلا_عنوان 20.png, size: 1600243, type: image/png
+[2025-11-27T18:33:30.516Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-27T18:33:30.516Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764268410516-07qzgo-__________________20.png
+[2025-11-27T18:33:30.517Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764268410516-07qzgo-__________________20.png
+[2025-11-27T18:42:43.380Z] Starting uploadImage
+[2025-11-27T18:42:43.383Z] Processing file: عمل_فني_بلا_عنوان 19.png, size: 5420590, type: image/png
+[2025-11-27T18:42:43.387Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-27T18:42:43.389Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764268963389-qf8yg6-__________________19.png
+[2025-11-27T18:42:43.391Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764268963389-qf8yg6-__________________19.png
+[2025-11-27T18:45:11.456Z] Starting uploadImage
+[2025-11-27T18:45:11.457Z] Processing file: عمل_فني_بلا_عنوان 1.png, size: 4343099, type: image/png
+[2025-11-27T18:45:11.459Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-27T18:45:11.460Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764269111460-dwu505-__________________1.png
+[2025-11-27T18:45:11.463Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764269111460-dwu505-__________________1.png
+[2025-11-28T10:22:18.481Z] Starting uploadImage
+[2025-11-28T10:22:18.482Z] Processing file: عمل_فني_بلا_عنوان 20.png, size: 1600243, type: image/png
+[2025-11-28T10:22:18.483Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-28T10:22:18.484Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764325338484-uki1c1-__________________20.png
+[2025-11-28T10:22:18.486Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764325338484-uki1c1-__________________20.png
+[2025-11-28T10:33:50.756Z] Starting uploadImage
+[2025-11-28T10:33:50.757Z] Processing file:  -2.jpg, size: 88836, type: image/jpeg
+[2025-11-28T10:33:50.758Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-28T10:33:50.758Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764326030758-n1t655-_-2.jpg
+[2025-11-28T10:33:50.759Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764326030758-n1t655-_-2.jpg
+[2025-11-28T10:45:40.252Z] Starting uploadImage
+[2025-11-28T10:45:40.253Z] Processing file: IMG_0609.png, size: 849499, type: image/png
+[2025-11-28T10:45:40.254Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-28T10:45:40.255Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764326740255-pnevl7-IMG_0609.png
+[2025-11-28T10:45:40.256Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764326740255-pnevl7-IMG_0609.png
+[2025-11-28T10:46:59.537Z] Starting uploadImage
+[2025-11-28T10:46:59.538Z] Processing file: عمل_فني_بلا_عنوان 13.png, size: 737908, type: image/png
+[2025-11-28T10:46:59.538Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-28T10:46:59.539Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764326819539-3t53io-__________________13.png
+[2025-11-28T10:46:59.540Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764326819539-3t53io-__________________13.png
+[2025-11-28T10:54:55.397Z] Starting uploadMultipleImages
+[2025-11-28T10:54:55.399Z] Found 3 files to upload
+[2025-11-28T10:54:55.399Z] Starting uploadImage
+[2025-11-28T10:54:55.400Z] Processing file: عمل_فني_بلا_عنوان 18.png, size: 1285880, type: image/png
+[2025-11-28T10:54:55.401Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-28T10:54:55.401Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327295401-ob5wnj-__________________18.png
+[2025-11-28T10:54:55.402Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327295401-ob5wnj-__________________18.png
+[2025-11-28T10:54:55.403Z] Starting uploadImage
+[2025-11-28T10:54:55.403Z] Processing file: عمل_فني_بلا_عنوان 19.png, size: 5420590, type: image/png
+[2025-11-28T10:54:55.405Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-28T10:54:55.406Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327295406-spg6o6-__________________19.png
+[2025-11-28T10:54:55.412Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327295406-spg6o6-__________________19.png
+[2025-11-28T10:54:55.413Z] Starting uploadImage
+[2025-11-28T10:54:55.414Z] Processing file: عمل_فني_بلا_عنوان 20.png, size: 1600243, type: image/png
+[2025-11-28T10:54:55.415Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-28T10:54:55.415Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327295415-3d61lv-__________________20.png
+[2025-11-28T10:54:55.417Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327295415-3d61lv-__________________20.png
+[2025-11-28T10:56:35.760Z] Starting uploadImage
+[2025-11-28T10:56:35.761Z] Processing file: عمل_فني_بلا_عنوان 20.png, size: 1600243, type: image/png
+[2025-11-28T10:56:35.762Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-28T10:56:35.762Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327395762-5ewqyt-__________________20.png
+[2025-11-28T10:56:35.763Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327395762-5ewqyt-__________________20.png
+[2025-11-28T10:57:27.356Z] Starting uploadMultipleImages
+[2025-11-28T10:57:27.357Z] Found 4 files to upload
+[2025-11-28T10:57:27.357Z] Starting uploadImage
+[2025-11-28T10:57:27.358Z] Processing file: عمل_فني_بلا_عنوان 17.png, size: 365327, type: image/png
+[2025-11-28T10:57:27.358Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-28T10:57:27.359Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327447359-ipz6d2-__________________17.png
+[2025-11-28T10:57:27.360Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327447359-ipz6d2-__________________17.png
+[2025-11-28T10:57:27.360Z] Starting uploadImage
+[2025-11-28T10:57:27.360Z] Processing file: عمل_فني_بلا_عنوان 18.png, size: 1285880, type: image/png
+[2025-11-28T10:57:27.361Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-28T10:57:27.361Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327447361-tfm7k8-__________________18.png
+[2025-11-28T10:57:27.363Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327447361-tfm7k8-__________________18.png
+[2025-11-28T10:57:27.364Z] Starting uploadImage
+[2025-11-28T10:57:27.365Z] Processing file: عمل_فني_بلا_عنوان 19.png, size: 5420590, type: image/png
+[2025-11-28T10:57:27.367Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-28T10:57:27.370Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327447370-okxz55-__________________19.png
+[2025-11-28T10:57:27.375Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327447370-okxz55-__________________19.png
+[2025-11-28T10:57:27.375Z] Starting uploadImage
+[2025-11-28T10:57:27.376Z] Processing file: عمل_فني_بلا_عنوان 20.png, size: 1600243, type: image/png
+[2025-11-28T10:57:27.377Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-28T10:57:27.378Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327447378-w93b4e-__________________20.png
+[2025-11-28T10:57:27.381Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764327447378-w93b4e-__________________20.png
+[2025-11-29T11:46:52.845Z] Starting uploadMultipleImages
+[2025-11-29T11:46:52.846Z] Found 5 files to upload
+[2025-11-29T11:46:52.847Z] Starting uploadImage
+[2025-11-29T11:46:52.848Z] Processing file: عمل_فني_بلا_عنوان 9.png, size: 366680, type: image/png
+[2025-11-29T11:46:52.849Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T11:46:52.850Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764416812849-qh84xb-__________________9.png
+[2025-11-29T11:46:52.851Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764416812849-qh84xb-__________________9.png
+[2025-11-29T11:46:52.851Z] Starting uploadImage
+[2025-11-29T11:46:52.851Z] Processing file: عمل_فني_بلا_عنوان 10.jpg, size: 758201, type: image/jpeg
+[2025-11-29T11:46:52.852Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T11:46:52.853Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764416812853-wonnn1-__________________10.jpg
+[2025-11-29T11:46:52.854Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764416812853-wonnn1-__________________10.jpg
+[2025-11-29T11:46:52.854Z] Starting uploadImage
+[2025-11-29T11:46:52.854Z] Processing file: عمل_فني_بلا_عنوان 10.png, size: 341370, type: image/png
+[2025-11-29T11:46:52.855Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T11:46:52.855Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764416812855-p8dp6p-__________________10.png
+[2025-11-29T11:46:52.856Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764416812855-p8dp6p-__________________10.png
+[2025-11-29T11:46:52.857Z] Starting uploadImage
+[2025-11-29T11:46:52.858Z] Processing file: عمل_فني_بلا_عنوان 11.jpg, size: 478651, type: image/jpeg
+[2025-11-29T11:46:52.858Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T11:46:52.859Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764416812859-0xhj7z-__________________11.jpg
+[2025-11-29T11:46:52.860Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764416812859-0xhj7z-__________________11.jpg
+[2025-11-29T11:46:52.860Z] Starting uploadImage
+[2025-11-29T11:46:52.861Z] Processing file: عمل_فني_بلا_عنوان 11.png, size: 954135, type: image/png
+[2025-11-29T11:46:52.862Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T11:46:52.862Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764416812862-fjhcky-__________________11.png
+[2025-11-29T11:46:52.863Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764416812862-fjhcky-__________________11.png
+[2025-11-29T12:08:08.625Z] Starting uploadImage
+[2025-11-29T12:08:08.627Z] Processing file: عمل_فني_بلا_عنوان 9.jpg, size: 722869, type: image/jpeg
+[2025-11-29T12:08:08.628Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T12:08:08.628Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418088628-97gtb5-__________________9.jpg
+[2025-11-29T12:08:08.629Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418088628-97gtb5-__________________9.jpg
+[2025-11-29T12:17:31.954Z] Starting uploadMultipleImages
+[2025-11-29T12:17:31.957Z] Found 11 files to upload
+[2025-11-29T12:17:31.958Z] Starting uploadImage
+[2025-11-29T12:17:31.958Z] Processing file: عمل_فني_بلا_عنوان 9.png, size: 366680, type: image/png
+[2025-11-29T12:17:31.959Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T12:17:31.960Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651959-21jtye-__________________9.png
+[2025-11-29T12:17:31.960Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651959-21jtye-__________________9.png
+[2025-11-29T12:17:31.961Z] Starting uploadImage
+[2025-11-29T12:17:31.961Z] Processing file: عمل_فني_بلا_عنوان 10.jpg, size: 758201, type: image/jpeg
+[2025-11-29T12:17:31.962Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T12:17:31.963Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651963-yapog0-__________________10.jpg
+[2025-11-29T12:17:31.964Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651963-yapog0-__________________10.jpg
+[2025-11-29T12:17:31.964Z] Starting uploadImage
+[2025-11-29T12:17:31.964Z] Processing file: عمل_فني_بلا_عنوان 10.png, size: 341370, type: image/png
+[2025-11-29T12:17:31.965Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T12:17:31.965Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651965-8xzrma-__________________10.png
+[2025-11-29T12:17:31.966Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651965-8xzrma-__________________10.png
+[2025-11-29T12:17:31.967Z] Starting uploadImage
+[2025-11-29T12:17:31.967Z] Processing file: عمل_فني_بلا_عنوان 11.jpg, size: 478651, type: image/jpeg
+[2025-11-29T12:17:31.967Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T12:17:31.968Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651968-0at4k7-__________________11.jpg
+[2025-11-29T12:17:31.969Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651968-0at4k7-__________________11.jpg
+[2025-11-29T12:17:31.969Z] Starting uploadImage
+[2025-11-29T12:17:31.969Z] Processing file: عمل_فني_بلا_عنوان 11.png, size: 954135, type: image/png
+[2025-11-29T12:17:31.970Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T12:17:31.970Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651970-7oe20l-__________________11.png
+[2025-11-29T12:17:31.971Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651970-7oe20l-__________________11.png
+[2025-11-29T12:17:31.971Z] Starting uploadImage
+[2025-11-29T12:17:31.972Z] Processing file: عمل_فني_بلا_عنوان 12.jpg, size: 427899, type: image/jpeg
+[2025-11-29T12:17:31.972Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T12:17:31.973Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651973-0nqcbr-__________________12.jpg
+[2025-11-29T12:17:31.973Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651973-0nqcbr-__________________12.jpg
+[2025-11-29T12:17:31.974Z] Starting uploadImage
+[2025-11-29T12:17:31.975Z] Processing file: عمل_فني_بلا_عنوان 12.png, size: 759386, type: image/png
+[2025-11-29T12:17:31.975Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T12:17:31.976Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651976-cj88no-__________________12.png
+[2025-11-29T12:17:31.977Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651976-cj88no-__________________12.png
+[2025-11-29T12:17:31.977Z] Starting uploadImage
+[2025-11-29T12:17:31.978Z] Processing file: عمل_فني_بلا_عنوان 13.jpg, size: 364219, type: image/jpeg
+[2025-11-29T12:17:31.978Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T12:17:31.978Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651978-bj9of7-__________________13.jpg
+[2025-11-29T12:17:31.979Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651978-bj9of7-__________________13.jpg
+[2025-11-29T12:17:31.979Z] Starting uploadImage
+[2025-11-29T12:17:31.980Z] Processing file: عمل_فني_بلا_عنوان 13.png, size: 737908, type: image/png
+[2025-11-29T12:17:31.981Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T12:17:31.981Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651981-ybwc5a-__________________13.png
+[2025-11-29T12:17:31.982Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651981-ybwc5a-__________________13.png
+[2025-11-29T12:17:31.982Z] Starting uploadImage
+[2025-11-29T12:17:31.983Z] Processing file: عمل_فني_بلا_عنوان 14.jpg, size: 325881, type: image/jpeg
+[2025-11-29T12:17:31.983Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T12:17:31.983Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651983-59yhdb-__________________14.jpg
+[2025-11-29T12:17:31.984Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651983-59yhdb-__________________14.jpg
+[2025-11-29T12:17:31.984Z] Starting uploadImage
+[2025-11-29T12:17:31.985Z] Processing file: عمل_فني_بلا_عنوان 14.png, size: 268326, type: image/png
+[2025-11-29T12:17:31.985Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T12:17:31.986Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651986-hw4zhp-__________________14.png
+[2025-11-29T12:17:31.986Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764418651986-hw4zhp-__________________14.png
+[2025-11-29T19:43:00.635Z] Starting uploadMultipleImages
+[2025-11-29T19:43:00.637Z] Found 13 files to upload
+[2025-11-29T19:43:00.638Z] Starting uploadImage
+[2025-11-29T19:43:00.638Z] Processing file: IMG_0460.PNG, size: 4447364, type: image/png
+[2025-11-29T19:43:00.641Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T19:43:00.643Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380643-cun7hl-IMG_0460.PNG
+[2025-11-29T19:43:00.648Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380643-cun7hl-IMG_0460.PNG
+[2025-11-29T19:43:00.649Z] Starting uploadImage
+[2025-11-29T19:43:00.650Z] Processing file: MI_M_B_44_Qishilong_body02_2_Inst_diffuse.png, size: 3699475, type: image/png
+[2025-11-29T19:43:00.652Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T19:43:00.653Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380653-fd5yuy-MI_M_B_44_Qishilong_body02_2_Inst_diffuse.png
+[2025-11-29T19:43:00.657Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380653-fd5yuy-MI_M_B_44_Qishilong_body02_2_Inst_diffuse.png
+[2025-11-29T19:43:00.658Z] Starting uploadImage
+[2025-11-29T19:43:00.659Z] Processing file: prod1.jpg, size: 1257967, type: image/jpeg
+[2025-11-29T19:43:00.660Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T19:43:00.660Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380660-v0zfws-prod1.jpg
+[2025-11-29T19:43:00.662Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380660-v0zfws-prod1.jpg
+[2025-11-29T19:43:00.663Z] Starting uploadImage
+[2025-11-29T19:43:00.663Z] Processing file: عمل_فني_بلا_عنوان 2.jpg, size: 744843, type: image/jpeg
+[2025-11-29T19:43:00.665Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T19:43:00.667Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380666-1mre1d-__________________2.jpg
+[2025-11-29T19:43:00.668Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380666-1mre1d-__________________2.jpg
+[2025-11-29T19:43:00.668Z] Starting uploadImage
+[2025-11-29T19:43:00.669Z] Processing file: عمل_فني_بلا_عنوان 2.png, size: 435103, type: image/png
+[2025-11-29T19:43:00.670Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T19:43:00.671Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380671-aeyy87-__________________2.png
+[2025-11-29T19:43:00.672Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380671-aeyy87-__________________2.png
+[2025-11-29T19:43:00.674Z] Starting uploadImage
+[2025-11-29T19:43:00.674Z] Processing file: عمل_فني_بلا_عنوان 3.jpg, size: 1980115, type: image/jpeg
+[2025-11-29T19:43:00.675Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T19:43:00.676Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380676-mmu58w-__________________3.jpg
+[2025-11-29T19:43:00.678Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380676-mmu58w-__________________3.jpg
+[2025-11-29T19:43:00.679Z] Starting uploadImage
+[2025-11-29T19:43:00.679Z] Processing file: عمل_فني_بلا_عنوان 3.png, size: 2438602, type: image/png
+[2025-11-29T19:43:00.681Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T19:43:00.689Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380689-0ikgq2-__________________3.png
+[2025-11-29T19:43:00.694Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380689-0ikgq2-__________________3.png
+[2025-11-29T19:43:00.694Z] Starting uploadImage
+[2025-11-29T19:43:00.695Z] Processing file: عمل_فني_بلا_عنوان 4.jpg, size: 2002008, type: image/jpeg
+[2025-11-29T19:43:00.695Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T19:43:00.696Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380696-efmfpa-__________________4.jpg
+[2025-11-29T19:43:00.697Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380696-efmfpa-__________________4.jpg
+[2025-11-29T19:43:00.697Z] Starting uploadImage
+[2025-11-29T19:43:00.697Z] Processing file: عمل_فني_بلا_عنوان 5.jpg, size: 914520, type: image/jpeg
+[2025-11-29T19:43:00.698Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T19:43:00.698Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380698-dcoeu4-__________________5.jpg
+[2025-11-29T19:43:00.699Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380698-dcoeu4-__________________5.jpg
+[2025-11-29T19:43:00.699Z] Starting uploadImage
+[2025-11-29T19:43:00.699Z] Processing file: عمل_فني_بلا_عنوان 6.jpg, size: 1949846, type: image/jpeg
+[2025-11-29T19:43:00.700Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T19:43:00.700Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380700-qlyjal-__________________6.jpg
+[2025-11-29T19:43:00.701Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380700-qlyjal-__________________6.jpg
+[2025-11-29T19:43:00.702Z] Starting uploadImage
+[2025-11-29T19:43:00.703Z] Processing file: عمل_فني_بلا_عنوان 7.jpg, size: 538949, type: image/jpeg
+[2025-11-29T19:43:00.703Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T19:43:00.703Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380703-10zj8r-__________________7.jpg
+[2025-11-29T19:43:00.704Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380703-10zj8r-__________________7.jpg
+[2025-11-29T19:43:00.704Z] Starting uploadImage
+[2025-11-29T19:43:00.704Z] Processing file: عمل_فني_بلا_عنوان 8.jpg, size: 320677, type: image/jpeg
+[2025-11-29T19:43:00.705Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T19:43:00.705Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380705-9nz38r-__________________8.jpg
+[2025-11-29T19:43:00.706Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380705-9nz38r-__________________8.jpg
+[2025-11-29T19:43:00.706Z] Starting uploadImage
+[2025-11-29T19:43:00.706Z] Processing file: عمل_فني_بلا_عنوان 9.jpg, size: 722869, type: image/jpeg
+[2025-11-29T19:43:00.707Z] Upload directory: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads
+[2025-11-29T19:43:00.707Z] Writing file to: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380707-7c64mz-__________________9.jpg
+[2025-11-29T19:43:00.707Z] File uploaded successfully: /Users/muazelbbas/Documents/Mangako/mangako/public/uploads/1764445380707-7c64mz-__________________9.jpg
+[2025-11-30T20:57:31.642Z] Image uploaded to Supabase: 1764536251042-694325560-21.png
+[2025-11-30T21:02:05.558Z] Image uploaded to Supabase: 1764536523747-156954537-20.png
+[2025-11-30T21:02:07.782Z] [AUTH] requireAdmin failed: User cmiln2cc0000010896paujpru has role 'user', expected 'admin'
+[2025-11-30T21:02:07.958Z] Create story failed: Forbidden: You do not have permission to perform this action
+[2025-11-30T21:03:29.265Z] Starting uploadMultipleImages
+[2025-11-30T21:03:29.267Z] Found 4 files to upload
+[2025-11-30T21:03:30.677Z] Image uploaded to Supabase: 1764536609268-423900559-16.png
+[2025-11-30T21:03:31.830Z] Image uploaded to Supabase: 1764536610679-28148893-17.png
+[2025-11-30T21:03:33.825Z] Image uploaded to Supabase: 1764536611831-536113248-18.png
+[2025-11-30T21:03:42.584Z] Image uploaded to Supabase: 1764536613830-385037056-19.png
+[2025-11-30T21:03:42.630Z] [AUTH] requireAdmin failed: User cmiln2cc0000010896paujpru has role 'user', expected 'admin'
+[2025-11-30T21:03:52.489Z] Starting uploadMultipleImages
+[2025-11-30T21:03:52.491Z] Found 4 files to upload
+[2025-11-30T21:03:53.437Z] Image uploaded to Supabase: 1764536632492-783108013-16.png
+[2025-11-30T21:03:54.010Z] Image uploaded to Supabase: 1764536633439-791695395-17.png
+[2025-11-30T21:03:55.231Z] Image uploaded to Supabase: 1764536634012-917557824-18.png
+[2025-11-30T21:04:07.848Z] Image uploaded to Supabase: 1764536635235-962071995-19.png
+[2025-11-30T21:04:07.883Z] [AUTH] requireAdmin failed: User cmiln2cc0000010896paujpru has role 'user', expected 'admin'
+[2025-11-30T21:05:51.770Z] Image uploaded to Supabase: 1764536749822-562476883-11.png
+[2025-11-30T21:06:30.598Z] Starting uploadMultipleImages
+[2025-11-30T21:06:30.600Z] Found 10 files to upload
+[2025-11-30T21:06:31.401Z] Image uploaded to Supabase: 1764536790603-59393480-13.jpg
+[2025-11-30T21:06:32.950Z] Image uploaded to Supabase: 1764536791403-380953059-13.png
+[2025-11-30T21:06:33.864Z] Image uploaded to Supabase: 1764536792951-60289548-14.jpg
+[2025-11-30T21:06:34.309Z] Image uploaded to Supabase: 1764536793865-325228124-14.png
+[2025-11-30T21:06:34.778Z] Image uploaded to Supabase: 1764536794311-540345173-15.png
+[2025-11-30T21:06:35.171Z] Image uploaded to Supabase: 1764536794779-824671631-16.png
+[2025-11-30T21:06:36.470Z] Image uploaded to Supabase: 1764536795173-58002274-17.png
+[2025-11-30T21:06:38.837Z] Image uploaded to Supabase: 1764536796472-75986362-18.png
+[2025-11-30T21:06:48.399Z] Image uploaded to Supabase: 1764536798841-787116865-19.png
+[2025-11-30T21:06:51.002Z] Image uploaded to Supabase: 1764536808401-680181796-20.png
+[2025-11-30T21:27:26.403Z] Image uploaded to Supabase: 1764538045606-773968623--2.jpg
+[2025-12-01T04:04:05.303Z] [AUTH] requireAuth failed: No user found in session
+[2025-12-01T04:06:00.362Z] [AUTH] requireAuth failed: No user found in session
+[2025-12-01T04:09:30.826Z] [AUTH] requireAuth failed: No user found in session
+[2025-12-01T04:10:07.347Z] [AUTH] requireAuth failed: No user found in session
+[2025-12-01T04:18:53.399Z] [AUTH] requireAuth failed: No user found in session
+[2025-12-01T04:18:53.738Z] Create story failed: Unauthorized: You must be logged in
+[2025-12-01T04:19:34.888Z] [AUTH] requireAuth failed: No user found in session
+[2025-12-01T04:21:00.400Z] [AUTH] requireAuth failed: No user found in session
+[2025-12-01T04:21:00.750Z] Create story failed: Unauthorized: You must be logged in
+[2025-12-01T04:21:30.554Z] [AUTH] requireAuth failed: No user found in session
+[2025-12-01T04:23:05.837Z] Image uploaded to Supabase: 1764562982836-946536122-1.png
+[2025-12-01T04:45:30.467Z] Starting uploadMultipleImages
+[2025-12-01T04:45:30.726Z] Found 6 files to upload
+[2025-12-01T04:45:32.644Z] Image uploaded to Supabase: 1764564330804-865767144-16.png
+[2025-12-01T04:45:33.924Z] Image uploaded to Supabase: 1764564332898-708730206-17.png
+[2025-12-01T04:45:36.232Z] Image uploaded to Supabase: 1764564334262-580428122-18.png
+[2025-12-01T04:45:45.454Z] Image uploaded to Supabase: 1764564336270-152197483-19.png
+[2025-12-01T04:45:48.309Z] Image uploaded to Supabase: 1764564346458-983917628-20.png
+[2025-12-01T04:45:51.116Z] Image uploaded to Supabase: 1764564348387-769883167-21.png
+[2025-12-01T04:47:08.420Z] Starting uploadMultipleImages
+[2025-12-01T04:47:08.424Z] Found 6 files to upload
+[2025-12-01T04:47:09.235Z] Image uploaded to Supabase: 1764564428425-949422455-16.png
+[2025-12-01T04:47:09.951Z] Image uploaded to Supabase: 1764564429236-579393224-17.png
+[2025-12-01T04:47:12.200Z] Image uploaded to Supabase: 1764564429953-401452900-18.png
+[2025-12-01T04:47:16.419Z] Image uploaded to Supabase: 1764564432205-942618014-19.png
+[2025-12-01T04:47:17.629Z] Image uploaded to Supabase: 1764564436431-853505409-20.png
+[2025-12-01T04:47:18.077Z] Image uploaded to Supabase: 1764564437638-109073066-21.png
+[2025-12-01T04:53:52.986Z] Starting uploadMultipleImages
+[2025-12-01T04:53:53.001Z] Found 1 files to upload
+[2025-12-01T04:53:54.098Z] Image uploaded to Supabase: 1764564833003-994131194-13.png
+[2025-12-01T04:53:55.174Z] [AUTH] requireAuth failed: No user found in session
+[2025-12-01T10:47:53.605Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T10:47:53.608Z] Found 2 file(s) to upload
+[2025-12-01T10:47:53.609Z] Total upload size: 1.63MB
+[2025-12-01T10:47:53.610Z] 
+--- Uploading file 1/2: عمل_فني_بلا_عنوان 11.png ---
+[2025-12-01T10:47:53.611Z] Attempting to upload: عمل_فني_بلا_عنوان 11.png (0.91MB, type: image/png)
+[2025-12-01T10:47:53.611Z] Storage mode: Supabase
+[2025-12-01T10:47:53.613Z] Uploading to Supabase: 1764586073612-148755962-11.png
+[2025-12-01T10:47:54.503Z] ✓ Supabase upload successful: 1764586073612-148755962-11.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764586073612-148755962-11.png
+[2025-12-01T10:47:54.505Z] ✓ File 1 uploaded successfully
+[2025-12-01T10:47:54.506Z] 
+--- Uploading file 2/2: عمل_فني_بلا_عنوان 12.png ---
+[2025-12-01T10:47:54.507Z] Attempting to upload: عمل_فني_بلا_عنوان 12.png (0.72MB, type: image/png)
+[2025-12-01T10:47:54.508Z] Storage mode: Supabase
+[2025-12-01T10:47:54.509Z] Uploading to Supabase: 1764586074509-445299655-12.png
+[2025-12-01T10:47:55.315Z] ✓ Supabase upload successful: 1764586074509-445299655-12.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764586074509-445299655-12.png
+[2025-12-01T10:47:55.316Z] ✓ File 2 uploaded successfully
+[2025-12-01T10:47:55.317Z] 
+Upload complete: 2/2 successful, 0 failed
+[2025-12-01T10:47:55.318Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T10:52:01.400Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T10:52:01.402Z] Found 1 file(s) to upload
+[2025-12-01T10:52:01.402Z] Total upload size: 0.33MB
+[2025-12-01T10:52:01.403Z] 
+--- Uploading file 1/1: عمل_فني_بلا_عنوان 10.png ---
+[2025-12-01T10:52:01.403Z] Attempting to upload: عمل_فني_بلا_عنوان 10.png (0.33MB, type: image/png)
+[2025-12-01T10:52:01.404Z] Storage mode: Supabase
+[2025-12-01T10:52:01.404Z] Uploading to Supabase: 1764586321404-980628809-10.png
+[2025-12-01T10:52:02.190Z] ✓ Supabase upload successful: 1764586321404-980628809-10.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764586321404-980628809-10.png
+[2025-12-01T10:52:02.190Z] ✓ File 1 uploaded successfully
+[2025-12-01T10:52:02.191Z] 
+Upload complete: 1/1 successful, 0 failed
+[2025-12-01T10:52:02.191Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T10:54:25.179Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T10:54:25.180Z] Found 1 file(s) to upload
+[2025-12-01T10:54:25.181Z] Total upload size: 0.35MB
+[2025-12-01T10:54:25.182Z] 
+--- Uploading file 1/1: عمل_فني_بلا_عنوان 9.png ---
+[2025-12-01T10:54:25.182Z] Attempting to upload: عمل_فني_بلا_عنوان 9.png (0.35MB, type: image/png)
+[2025-12-01T10:54:25.183Z] Storage mode: Supabase
+[2025-12-01T10:54:25.184Z] Uploading to Supabase: 1764586465184-546724434-9.png
+[2025-12-01T10:54:26.171Z] ✓ Supabase upload successful: 1764586465184-546724434-9.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764586465184-546724434-9.png
+[2025-12-01T10:54:26.173Z] ✓ File 1 uploaded successfully
+[2025-12-01T10:54:26.174Z] 
+Upload complete: 1/1 successful, 0 failed
+[2025-12-01T10:54:26.175Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T10:59:53.297Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T10:59:53.302Z] Found 3 file(s) to upload
+[2025-12-01T10:59:53.303Z] Total upload size: 7.15MB
+[2025-12-01T10:59:53.303Z] 
+--- Uploading file 1/3: عمل_فني_بلا_عنوان 19.png ---
+[2025-12-01T10:59:53.304Z] Attempting to upload: عمل_فني_بلا_عنوان 19.png (5.17MB, type: image/png)
+[2025-12-01T10:59:53.305Z] Storage mode: Supabase
+[2025-12-01T10:59:53.308Z] Uploading to Supabase: 1764586793308-686018763-19.png
+[2025-12-01T10:59:55.715Z] ✓ Supabase upload successful: 1764586793308-686018763-19.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764586793308-686018763-19.png
+[2025-12-01T10:59:55.717Z] ✓ File 1 uploaded successfully
+[2025-12-01T10:59:55.719Z] 
+--- Uploading file 2/3: عمل_فني_بلا_عنوان 20.png ---
+[2025-12-01T10:59:55.720Z] Attempting to upload: عمل_فني_بلا_عنوان 20.png (1.53MB, type: image/png)
+[2025-12-01T10:59:55.721Z] Storage mode: Supabase
+[2025-12-01T10:59:55.723Z] Uploading to Supabase: 1764586795723-416440207-20.png
+[2025-12-01T10:59:56.633Z] ✓ Supabase upload successful: 1764586795723-416440207-20.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764586795723-416440207-20.png
+[2025-12-01T10:59:56.635Z] ✓ File 2 uploaded successfully
+[2025-12-01T10:59:56.635Z] 
+--- Uploading file 3/3: عمل_فني_بلا_عنوان 21.png ---
+[2025-12-01T10:59:56.636Z] Attempting to upload: عمل_فني_بلا_عنوان 21.png (0.45MB, type: image/png)
+[2025-12-01T10:59:56.637Z] Storage mode: Supabase
+[2025-12-01T10:59:56.639Z] Uploading to Supabase: 1764586796639-927711625-21.png
+[2025-12-01T10:59:57.000Z] ✓ Supabase upload successful: 1764586796639-927711625-21.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764586796639-927711625-21.png
+[2025-12-01T10:59:57.001Z] ✓ File 3 uploaded successfully
+[2025-12-01T10:59:57.002Z] 
+Upload complete: 3/3 successful, 0 failed
+[2025-12-01T10:59:57.003Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T11:00:28.171Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T11:00:28.172Z] Found 1 file(s) to upload
+[2025-12-01T11:00:28.173Z] Total upload size: 0.35MB
+[2025-12-01T11:00:28.173Z] 
+--- Uploading file 1/1: عمل_فني_بلا_عنوان 9.png ---
+[2025-12-01T11:00:28.173Z] Attempting to upload: عمل_فني_بلا_عنوان 9.png (0.35MB, type: image/png)
+[2025-12-01T11:00:28.173Z] Storage mode: Supabase
+[2025-12-01T11:00:28.174Z] Uploading to Supabase: 1764586828174-422207704-9.png
+[2025-12-01T11:00:29.505Z] ✓ Supabase upload successful: 1764586828174-422207704-9.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764586828174-422207704-9.png
+[2025-12-01T11:00:29.506Z] ✓ File 1 uploaded successfully
+[2025-12-01T11:00:29.507Z] 
+Upload complete: 1/1 successful, 0 failed
+[2025-12-01T11:00:29.507Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T11:03:23.282Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T11:03:23.284Z] Found 1 file(s) to upload
+[2025-12-01T11:03:23.285Z] Total upload size: 1.44MB
+[2025-12-01T11:03:23.285Z] 
+--- Uploading file 1/1: عمل_فني_بلا_عنوان 4.png ---
+[2025-12-01T11:03:23.285Z] Attempting to upload: عمل_فني_بلا_عنوان 4.png (1.44MB, type: image/png)
+[2025-12-01T11:03:23.286Z] Storage mode: Supabase
+[2025-12-01T11:03:23.287Z] Uploading to Supabase: 1764587003287-771800789-4.png
+[2025-12-01T11:03:24.307Z] ✓ Supabase upload successful: 1764587003287-771800789-4.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587003287-771800789-4.png
+[2025-12-01T11:03:24.309Z] ✓ File 1 uploaded successfully
+[2025-12-01T11:03:24.310Z] 
+Upload complete: 1/1 successful, 0 failed
+[2025-12-01T11:03:24.311Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T11:14:52.744Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T11:14:52.746Z] Found 1 file(s) to upload
+[2025-12-01T11:14:52.747Z] Total upload size: 0.45MB
+[2025-12-01T11:14:52.747Z] 
+--- Uploading file 1/1: عمل_فني_بلا_عنوان 21.png ---
+[2025-12-01T11:14:52.748Z] Attempting to upload: عمل_فني_بلا_عنوان 21.png (0.45MB, type: image/png)
+[2025-12-01T11:14:52.748Z] Storage mode: Supabase
+[2025-12-01T11:14:52.748Z] Uploading to Supabase: 1764587692748-192194042-21.png
+[2025-12-01T11:14:53.484Z] ✓ Supabase upload successful: 1764587692748-192194042-21.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587692748-192194042-21.png
+[2025-12-01T11:14:53.485Z] ✓ File 1 uploaded successfully
+[2025-12-01T11:14:53.487Z] 
+Upload complete: 1/1 successful, 0 failed
+[2025-12-01T11:14:53.488Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T11:16:06.890Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T11:16:06.891Z] Found 1 file(s) to upload
+[2025-12-01T11:16:06.892Z] Total upload size: 5.17MB
+[2025-12-01T11:16:06.893Z] 
+--- Uploading file 1/1: عمل_فني_بلا_عنوان 19.png ---
+[2025-12-01T11:16:06.894Z] Attempting to upload: عمل_فني_بلا_عنوان 19.png (5.17MB, type: image/png)
+[2025-12-01T11:16:06.894Z] Storage mode: Supabase
+[2025-12-01T11:16:06.898Z] Uploading to Supabase: 1764587766898-414906335-19.png
+[2025-12-01T11:16:09.669Z] ✓ Supabase upload successful: 1764587766898-414906335-19.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587766898-414906335-19.png
+[2025-12-01T11:16:09.671Z] ✓ File 1 uploaded successfully
+[2025-12-01T11:16:09.671Z] 
+Upload complete: 1/1 successful, 0 failed
+[2025-12-01T11:16:09.672Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T11:18:24.360Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T11:18:24.361Z] Found 8 file(s) to upload
+[2025-12-01T11:18:24.362Z] Total upload size: 9.61MB
+[2025-12-01T11:18:24.362Z] 
+--- Uploading file 1/8: عمل_فني_بلا_عنوان 14.png ---
+[2025-12-01T11:18:24.363Z] Attempting to upload: عمل_فني_بلا_عنوان 14.png (0.26MB, type: image/png)
+[2025-12-01T11:18:24.363Z] Storage mode: Supabase
+[2025-12-01T11:18:24.364Z] Uploading to Supabase: 1764587904364-517561063-14.png
+[2025-12-01T11:18:25.046Z] ✓ Supabase upload successful: 1764587904364-517561063-14.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587904364-517561063-14.png
+[2025-12-01T11:18:25.047Z] ✓ File 1 uploaded successfully
+[2025-12-01T11:18:25.048Z] 
+--- Uploading file 2/8: عمل_فني_بلا_عنوان 15.png ---
+[2025-12-01T11:18:25.048Z] Attempting to upload: عمل_فني_بلا_عنوان 15.png (0.35MB, type: image/png)
+[2025-12-01T11:18:25.049Z] Storage mode: Supabase
+[2025-12-01T11:18:25.049Z] Uploading to Supabase: 1764587905049-799155132-15.png
+[2025-12-01T11:18:25.360Z] ✓ Supabase upload successful: 1764587905049-799155132-15.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587905049-799155132-15.png
+[2025-12-01T11:18:25.361Z] ✓ File 2 uploaded successfully
+[2025-12-01T11:18:25.362Z] 
+--- Uploading file 3/8: عمل_فني_بلا_عنوان 16.png ---
+[2025-12-01T11:18:25.363Z] Attempting to upload: عمل_فني_بلا_عنوان 16.png (0.28MB, type: image/png)
+[2025-12-01T11:18:25.363Z] Storage mode: Supabase
+[2025-12-01T11:18:25.364Z] Uploading to Supabase: 1764587905364-827060533-16.png
+[2025-12-01T11:18:25.687Z] ✓ Supabase upload successful: 1764587905364-827060533-16.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587905364-827060533-16.png
+[2025-12-01T11:18:25.688Z] ✓ File 3 uploaded successfully
+[2025-12-01T11:18:25.689Z] 
+--- Uploading file 4/8: عمل_فني_بلا_عنوان 17.png ---
+[2025-12-01T11:18:25.690Z] Attempting to upload: عمل_فني_بلا_عنوان 17.png (0.35MB, type: image/png)
+[2025-12-01T11:18:25.691Z] Storage mode: Supabase
+[2025-12-01T11:18:25.692Z] Uploading to Supabase: 1764587905692-47467002-17.png
+[2025-12-01T11:18:26.166Z] ✓ Supabase upload successful: 1764587905692-47467002-17.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587905692-47467002-17.png
+[2025-12-01T11:18:26.167Z] ✓ File 4 uploaded successfully
+[2025-12-01T11:18:26.167Z] 
+--- Uploading file 5/8: عمل_فني_بلا_عنوان 18.png ---
+[2025-12-01T11:18:26.168Z] Attempting to upload: عمل_فني_بلا_عنوان 18.png (1.23MB, type: image/png)
+[2025-12-01T11:18:26.168Z] Storage mode: Supabase
+[2025-12-01T11:18:26.169Z] Uploading to Supabase: 1764587906169-951041600-18.png
+[2025-12-01T11:18:26.886Z] ✓ Supabase upload successful: 1764587906169-951041600-18.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587906169-951041600-18.png
+[2025-12-01T11:18:26.887Z] ✓ File 5 uploaded successfully
+[2025-12-01T11:18:26.888Z] 
+--- Uploading file 6/8: عمل_فني_بلا_عنوان 19.png ---
+[2025-12-01T11:18:26.889Z] Attempting to upload: عمل_فني_بلا_عنوان 19.png (5.17MB, type: image/png)
+[2025-12-01T11:18:26.889Z] Storage mode: Supabase
+[2025-12-01T11:18:26.894Z] Uploading to Supabase: 1764587906894-162081341-19.png
+[2025-12-01T11:18:29.138Z] ✓ Supabase upload successful: 1764587906894-162081341-19.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587906894-162081341-19.png
+[2025-12-01T11:18:29.140Z] ✓ File 6 uploaded successfully
+[2025-12-01T11:18:29.141Z] 
+--- Uploading file 7/8: عمل_فني_بلا_عنوان 20.png ---
+[2025-12-01T11:18:29.142Z] Attempting to upload: عمل_فني_بلا_عنوان 20.png (1.53MB, type: image/png)
+[2025-12-01T11:18:29.143Z] Storage mode: Supabase
+[2025-12-01T11:18:29.147Z] Uploading to Supabase: 1764587909147-208844058-20.png
+[2025-12-01T11:18:29.782Z] ✓ Supabase upload successful: 1764587909147-208844058-20.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587909147-208844058-20.png
+[2025-12-01T11:18:29.783Z] ✓ File 7 uploaded successfully
+[2025-12-01T11:18:29.784Z] 
+--- Uploading file 8/8: عمل_فني_بلا_عنوان 21.png ---
+[2025-12-01T11:18:29.785Z] Attempting to upload: عمل_فني_بلا_عنوان 21.png (0.45MB, type: image/png)
+[2025-12-01T11:18:29.786Z] Storage mode: Supabase
+[2025-12-01T11:18:29.787Z] Uploading to Supabase: 1764587909787-235305682-21.png
+[2025-12-01T11:18:30.128Z] ✓ Supabase upload successful: 1764587909787-235305682-21.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587909787-235305682-21.png
+[2025-12-01T11:18:30.130Z] ✓ File 8 uploaded successfully
+[2025-12-01T11:18:30.131Z] 
+Upload complete: 8/8 successful, 0 failed
+[2025-12-01T11:18:30.132Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T11:19:06.427Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T11:19:06.428Z] Found 7 file(s) to upload
+[2025-12-01T11:19:06.429Z] Total upload size: 7.35MB
+[2025-12-01T11:19:06.429Z] 
+--- Uploading file 1/7: عمل_فني_بلا_عنوان 4.jpg ---
+[2025-12-01T11:19:06.429Z] Attempting to upload: عمل_فني_بلا_عنوان 4.jpg (1.91MB, type: image/jpeg)
+[2025-12-01T11:19:06.429Z] Storage mode: Supabase
+[2025-12-01T11:19:06.430Z] Uploading to Supabase: 1764587946430-407402918-4.jpg
+[2025-12-01T11:19:07.848Z] ✓ Supabase upload successful: 1764587946430-407402918-4.jpg -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587946430-407402918-4.jpg
+[2025-12-01T11:19:07.850Z] ✓ File 1 uploaded successfully
+[2025-12-01T11:19:07.851Z] 
+--- Uploading file 2/7: عمل_فني_بلا_عنوان 5.jpg ---
+[2025-12-01T11:19:07.851Z] Attempting to upload: عمل_فني_بلا_عنوان 5.jpg (0.87MB, type: image/jpeg)
+[2025-12-01T11:19:07.852Z] Storage mode: Supabase
+[2025-12-01T11:19:07.853Z] Uploading to Supabase: 1764587947853-459235088-5.jpg
+[2025-12-01T11:19:08.375Z] ✓ Supabase upload successful: 1764587947853-459235088-5.jpg -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587947853-459235088-5.jpg
+[2025-12-01T11:19:08.376Z] ✓ File 2 uploaded successfully
+[2025-12-01T11:19:08.377Z] 
+--- Uploading file 3/7: عمل_فني_بلا_عنوان 6.jpg ---
+[2025-12-01T11:19:08.378Z] Attempting to upload: عمل_فني_بلا_عنوان 6.jpg (1.86MB, type: image/jpeg)
+[2025-12-01T11:19:08.379Z] Storage mode: Supabase
+[2025-12-01T11:19:08.381Z] Uploading to Supabase: 1764587948381-381873308-6.jpg
+[2025-12-01T11:19:09.281Z] ✓ Supabase upload successful: 1764587948381-381873308-6.jpg -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587948381-381873308-6.jpg
+[2025-12-01T11:19:09.282Z] ✓ File 3 uploaded successfully
+[2025-12-01T11:19:09.283Z] 
+--- Uploading file 4/7: عمل_فني_بلا_عنوان 7.jpg ---
+[2025-12-01T11:19:09.283Z] Attempting to upload: عمل_فني_بلا_عنوان 7.jpg (0.51MB, type: image/jpeg)
+[2025-12-01T11:19:09.284Z] Storage mode: Supabase
+[2025-12-01T11:19:09.285Z] Uploading to Supabase: 1764587949285-105355389-7.jpg
+[2025-12-01T11:19:09.660Z] ✓ Supabase upload successful: 1764587949285-105355389-7.jpg -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587949285-105355389-7.jpg
+[2025-12-01T11:19:09.662Z] ✓ File 4 uploaded successfully
+[2025-12-01T11:19:09.663Z] 
+--- Uploading file 5/7: عمل_فني_بلا_عنوان 8.jpg ---
+[2025-12-01T11:19:09.664Z] Attempting to upload: عمل_فني_بلا_عنوان 8.jpg (0.31MB, type: image/jpeg)
+[2025-12-01T11:19:09.665Z] Storage mode: Supabase
+[2025-12-01T11:19:09.666Z] Uploading to Supabase: 1764587949666-235332999-8.jpg
+[2025-12-01T11:19:09.987Z] ✓ Supabase upload successful: 1764587949666-235332999-8.jpg -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587949666-235332999-8.jpg
+[2025-12-01T11:19:09.989Z] ✓ File 5 uploaded successfully
+[2025-12-01T11:19:09.990Z] 
+--- Uploading file 6/7: عمل_فني_بلا_عنوان 9.jpg ---
+[2025-12-01T11:19:09.990Z] Attempting to upload: عمل_فني_بلا_عنوان 9.jpg (0.69MB, type: image/jpeg)
+[2025-12-01T11:19:09.991Z] Storage mode: Supabase
+[2025-12-01T11:19:09.991Z] Uploading to Supabase: 1764587949991-50395866-9.jpg
+[2025-12-01T11:19:10.393Z] ✓ Supabase upload successful: 1764587949991-50395866-9.jpg -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587949991-50395866-9.jpg
+[2025-12-01T11:19:10.394Z] ✓ File 6 uploaded successfully
+[2025-12-01T11:19:10.395Z] 
+--- Uploading file 7/7: عمل_فني_بلا_عنوان.png ---
+[2025-12-01T11:19:10.396Z] Attempting to upload: عمل_فني_بلا_عنوان.png (1.20MB, type: image/png)
+[2025-12-01T11:19:10.396Z] Storage mode: Supabase
+[2025-12-01T11:19:10.397Z] Uploading to Supabase: 1764587950397-39512066-.png
+[2025-12-01T11:19:10.936Z] ✓ Supabase upload successful: 1764587950397-39512066-.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764587950397-39512066-.png
+[2025-12-01T11:19:10.937Z] ✓ File 7 uploaded successfully
+[2025-12-01T11:19:10.938Z] 
+Upload complete: 7/7 successful, 0 failed
+[2025-12-01T11:19:10.938Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T11:28:32.439Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T11:28:32.442Z] Found 3 file(s) to upload
+[2025-12-01T11:28:32.443Z] Total upload size: 7.15MB
+[2025-12-01T11:28:32.444Z] 
+--- Uploading file 1/3: عمل_فني_بلا_عنوان 19.png ---
+[2025-12-01T11:28:32.445Z] Attempting to upload: عمل_فني_بلا_عنوان 19.png (5.17MB, type: image/png)
+[2025-12-01T11:28:32.445Z] Storage mode: Supabase
+[2025-12-01T11:28:32.450Z] Uploading to Supabase: 1764588512450-680406411-19.png
+[2025-12-01T11:28:34.742Z] ✓ Supabase upload successful: 1764588512450-680406411-19.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764588512450-680406411-19.png
+[2025-12-01T11:28:34.743Z] ✓ File 1 uploaded successfully
+[2025-12-01T11:28:34.744Z] 
+--- Uploading file 2/3: عمل_فني_بلا_عنوان 20.png ---
+[2025-12-01T11:28:34.745Z] Attempting to upload: عمل_فني_بلا_عنوان 20.png (1.53MB, type: image/png)
+[2025-12-01T11:28:34.746Z] Storage mode: Supabase
+[2025-12-01T11:28:34.748Z] Uploading to Supabase: 1764588514748-293183438-20.png
+[2025-12-01T11:28:35.665Z] ✓ Supabase upload successful: 1764588514748-293183438-20.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764588514748-293183438-20.png
+[2025-12-01T11:28:35.666Z] ✓ File 2 uploaded successfully
+[2025-12-01T11:28:35.667Z] 
+--- Uploading file 3/3: عمل_فني_بلا_عنوان 21.png ---
+[2025-12-01T11:28:35.668Z] Attempting to upload: عمل_فني_بلا_عنوان 21.png (0.45MB, type: image/png)
+[2025-12-01T11:28:35.672Z] Storage mode: Supabase
+[2025-12-01T11:28:35.674Z] Uploading to Supabase: 1764588515674-157615757-21.png
+[2025-12-01T11:28:36.029Z] ✓ Supabase upload successful: 1764588515674-157615757-21.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764588515674-157615757-21.png
+[2025-12-01T11:28:36.031Z] ✓ File 3 uploaded successfully
+[2025-12-01T11:28:36.032Z] 
+Upload complete: 3/3 successful, 0 failed
+[2025-12-01T11:28:36.033Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T11:31:27.584Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T11:31:27.586Z] Found 1 file(s) to upload
+[2025-12-01T11:31:27.587Z] Total upload size: 0.91MB
+[2025-12-01T11:31:27.590Z] 
+--- Uploading file 1/1: عمل_فني_بلا_عنوان 11.png ---
+[2025-12-01T11:31:27.591Z] Attempting to upload: عمل_فني_بلا_عنوان 11.png (0.91MB, type: image/png)
+[2025-12-01T11:31:27.591Z] Storage mode: Supabase
+[2025-12-01T11:31:27.592Z] Uploading to Supabase: 1764588687592-556407920-11.png
+[2025-12-01T11:31:28.517Z] ✓ Supabase upload successful: 1764588687592-556407920-11.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764588687592-556407920-11.png
+[2025-12-01T11:31:28.518Z] ✓ File 1 uploaded successfully
+[2025-12-01T11:31:28.519Z] 
+Upload complete: 1/1 successful, 0 failed
+[2025-12-01T11:31:28.520Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T11:32:41.042Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T11:32:41.043Z] Found 1 file(s) to upload
+[2025-12-01T11:32:41.043Z] Total upload size: 0.81MB
+[2025-12-01T11:32:41.044Z] 
+--- Uploading file 1/1: IMG_0609.png ---
+[2025-12-01T11:32:41.044Z] Attempting to upload: IMG_0609.png (0.81MB, type: image/png)
+[2025-12-01T11:32:41.044Z] Storage mode: Supabase
+[2025-12-01T11:32:41.047Z] Uploading to Supabase: 1764588761047-776413367-IMG0609.png
+[2025-12-01T11:32:41.782Z] ✓ Supabase upload successful: 1764588761047-776413367-IMG0609.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764588761047-776413367-IMG0609.png
+[2025-12-01T11:32:41.783Z] ✓ File 1 uploaded successfully
+[2025-12-01T11:32:41.784Z] 
+Upload complete: 1/1 successful, 0 failed
+[2025-12-01T11:32:41.785Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T11:34:53.333Z] Attempting to upload: عمل_فني_بلا_عنوان 20.png (1.53MB, type: image/png)
+[2025-12-01T11:34:53.336Z] Storage mode: Supabase
+[2025-12-01T11:34:53.337Z] Uploading to Supabase: 1764588893337-146218589-20.png
+[2025-12-01T11:34:54.315Z] ✓ Supabase upload successful: 1764588893337-146218589-20.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764588893337-146218589-20.png
+[2025-12-01T11:37:06.274Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T11:37:06.276Z] Found 4 file(s) to upload
+[2025-12-01T11:37:06.276Z] Total upload size: 8.37MB
+[2025-12-01T11:37:06.277Z] 
+--- Uploading file 1/4: عمل_فني_بلا_عنوان 18.png ---
+[2025-12-01T11:37:06.278Z] Attempting to upload: عمل_فني_بلا_عنوان 18.png (1.23MB, type: image/png)
+[2025-12-01T11:37:06.278Z] Storage mode: Supabase
+[2025-12-01T11:37:06.284Z] Uploading to Supabase: 1764589026284-982114923-18.png
+[2025-12-01T11:37:07.260Z] ✓ Supabase upload successful: 1764589026284-982114923-18.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764589026284-982114923-18.png
+[2025-12-01T11:37:07.261Z] ✓ File 1 uploaded successfully
+[2025-12-01T11:37:07.262Z] 
+--- Uploading file 2/4: عمل_فني_بلا_عنوان 19.png ---
+[2025-12-01T11:37:07.262Z] Attempting to upload: عمل_فني_بلا_عنوان 19.png (5.17MB, type: image/png)
+[2025-12-01T11:37:07.262Z] Storage mode: Supabase
+[2025-12-01T11:37:07.264Z] Uploading to Supabase: 1764589027264-953713914-19.png
+[2025-12-01T11:37:10.436Z] ✓ Supabase upload successful: 1764589027264-953713914-19.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764589027264-953713914-19.png
+[2025-12-01T11:37:10.437Z] ✓ File 2 uploaded successfully
+[2025-12-01T11:37:10.438Z] 
+--- Uploading file 3/4: عمل_فني_بلا_عنوان 20.png ---
+[2025-12-01T11:37:10.439Z] Attempting to upload: عمل_فني_بلا_عنوان 20.png (1.53MB, type: image/png)
+[2025-12-01T11:37:10.439Z] Storage mode: Supabase
+[2025-12-01T11:37:10.442Z] Uploading to Supabase: 1764589030442-506039686-20.png
+[2025-12-01T11:37:11.279Z] ✓ Supabase upload successful: 1764589030442-506039686-20.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764589030442-506039686-20.png
+[2025-12-01T11:37:11.280Z] ✓ File 3 uploaded successfully
+[2025-12-01T11:37:11.280Z] 
+--- Uploading file 4/4: عمل_فني_بلا_عنوان 21.png ---
+[2025-12-01T11:37:11.281Z] Attempting to upload: عمل_فني_بلا_عنوان 21.png (0.45MB, type: image/png)
+[2025-12-01T11:37:11.281Z] Storage mode: Supabase
+[2025-12-01T11:37:11.282Z] Uploading to Supabase: 1764589031282-911011411-21.png
+[2025-12-01T11:37:11.738Z] ✓ Supabase upload successful: 1764589031282-911011411-21.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764589031282-911011411-21.png
+[2025-12-01T11:37:11.739Z] ✓ File 4 uploaded successfully
+[2025-12-01T11:37:11.740Z] 
+Upload complete: 4/4 successful, 0 failed
+[2025-12-01T11:37:11.741Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T12:08:39.621Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T12:08:39.623Z] Found 3 file(s) to upload
+[2025-12-01T12:08:39.624Z] Total upload size: 1.59MB
+[2025-12-01T12:08:39.624Z] 
+--- Uploading file 1/3: عمل_فني_بلا_عنوان 10.jpg ---
+[2025-12-01T12:08:39.625Z] Attempting to upload: عمل_فني_بلا_عنوان 10.jpg (0.72MB, type: image/jpeg)
+[2025-12-01T12:08:39.625Z] Storage mode: Supabase
+[2025-12-01T12:08:39.626Z] Uploading to Supabase: 1764590919626-162512452-10.jpg
+[2025-12-01T12:08:40.753Z] ✓ Supabase upload successful: 1764590919626-162512452-10.jpg -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764590919626-162512452-10.jpg
+[2025-12-01T12:08:40.754Z] ✓ File 1 uploaded successfully
+[2025-12-01T12:08:40.754Z] 
+--- Uploading file 2/3: عمل_فني_بلا_عنوان 11.jpg ---
+[2025-12-01T12:08:40.754Z] Attempting to upload: عمل_فني_بلا_عنوان 11.jpg (0.46MB, type: image/jpeg)
+[2025-12-01T12:08:40.755Z] Storage mode: Supabase
+[2025-12-01T12:08:40.755Z] Uploading to Supabase: 1764590920755-729515610-11.jpg
+[2025-12-01T12:08:41.155Z] ✓ Supabase upload successful: 1764590920755-729515610-11.jpg -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764590920755-729515610-11.jpg
+[2025-12-01T12:08:41.156Z] ✓ File 2 uploaded successfully
+[2025-12-01T12:08:41.157Z] 
+--- Uploading file 3/3: عمل_فني_بلا_عنوان 12.jpg ---
+[2025-12-01T12:08:41.158Z] Attempting to upload: عمل_فني_بلا_عنوان 12.jpg (0.41MB, type: image/jpeg)
+[2025-12-01T12:08:41.159Z] Storage mode: Supabase
+[2025-12-01T12:08:41.159Z] Uploading to Supabase: 1764590921159-687834398-12.jpg
+[2025-12-01T12:08:41.513Z] ✓ Supabase upload successful: 1764590921159-687834398-12.jpg -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764590921159-687834398-12.jpg
+[2025-12-01T12:08:41.514Z] ✓ File 3 uploaded successfully
+[2025-12-01T12:08:41.514Z] 
+Upload complete: 3/3 successful, 0 failed
+[2025-12-01T12:08:41.515Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T12:08:56.922Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T12:08:56.927Z] Found 1 file(s) to upload
+[2025-12-01T12:08:56.928Z] Total upload size: 0.33MB
+[2025-12-01T12:08:56.929Z] 
+--- Uploading file 1/1: عمل_فني_بلا_عنوان 10.png ---
+[2025-12-01T12:08:56.930Z] Attempting to upload: عمل_فني_بلا_عنوان 10.png (0.33MB, type: image/png)
+[2025-12-01T12:08:56.931Z] Storage mode: Supabase
+[2025-12-01T12:08:56.934Z] Uploading to Supabase: 1764590936933-542784631-10.png
+[2025-12-01T12:08:57.752Z] ✓ Supabase upload successful: 1764590936933-542784631-10.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764590936933-542784631-10.png
+[2025-12-01T12:08:57.754Z] ✓ File 1 uploaded successfully
+[2025-12-01T12:08:57.755Z] 
+Upload complete: 1/1 successful, 0 failed
+[2025-12-01T12:08:57.756Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T12:35:47.212Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T12:35:47.222Z] Found 1 file(s) to upload
+[2025-12-01T12:35:47.223Z] Total upload size: 0.91MB
+[2025-12-01T12:35:47.223Z] 
+--- Uploading file 1/1: عمل_فني_بلا_عنوان 11.png ---
+[2025-12-01T12:35:47.224Z] Attempting to upload: عمل_فني_بلا_عنوان 11.png (0.91MB, type: image/png)
+[2025-12-01T12:35:47.224Z] Storage mode: Supabase
+[2025-12-01T12:35:47.225Z] Uploading to Supabase: 1764592547225-671626308-11.png
+[2025-12-01T12:35:49.142Z] ✓ Supabase upload successful: 1764592547225-671626308-11.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764592547225-671626308-11.png
+[2025-12-01T12:35:49.143Z] ✓ File 1 uploaded successfully
+[2025-12-01T12:35:49.144Z] 
+Upload complete: 1/1 successful, 0 failed
+[2025-12-01T12:35:49.144Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T12:43:16.917Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T12:43:16.919Z] Found 3 file(s) to upload
+[2025-12-01T12:43:16.922Z] Total upload size: 7.15MB
+[2025-12-01T12:43:16.923Z] 
+--- Uploading file 1/3: عمل_فني_بلا_عنوان 19.png ---
+[2025-12-01T12:43:16.924Z] Attempting to upload: عمل_فني_بلا_عنوان 19.png (5.17MB, type: image/png)
+[2025-12-01T12:43:16.924Z] Storage mode: Supabase
+[2025-12-01T12:43:16.926Z] Uploading to Supabase: 1764592996926-27808460-19.png
+[2025-12-01T12:43:21.382Z] ✓ Supabase upload successful: 1764592996926-27808460-19.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764592996926-27808460-19.png
+[2025-12-01T12:43:21.383Z] ✓ File 1 uploaded successfully
+[2025-12-01T12:43:21.384Z] 
+--- Uploading file 2/3: عمل_فني_بلا_عنوان 20.png ---
+[2025-12-01T12:43:21.384Z] Attempting to upload: عمل_فني_بلا_عنوان 20.png (1.53MB, type: image/png)
+[2025-12-01T12:43:21.384Z] Storage mode: Supabase
+[2025-12-01T12:43:21.385Z] Uploading to Supabase: 1764593001385-623740935-20.png
+[2025-12-01T12:43:22.631Z] ✓ Supabase upload successful: 1764593001385-623740935-20.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764593001385-623740935-20.png
+[2025-12-01T12:43:22.631Z] ✓ File 2 uploaded successfully
+[2025-12-01T12:43:22.632Z] 
+--- Uploading file 3/3: عمل_فني_بلا_عنوان 21.png ---
+[2025-12-01T12:43:22.632Z] Attempting to upload: عمل_فني_بلا_عنوان 21.png (0.45MB, type: image/png)
+[2025-12-01T12:43:22.632Z] Storage mode: Supabase
+[2025-12-01T12:43:22.633Z] Uploading to Supabase: 1764593002633-292921403-21.png
+[2025-12-01T12:43:23.152Z] ✓ Supabase upload successful: 1764593002633-292921403-21.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764593002633-292921403-21.png
+[2025-12-01T12:43:23.153Z] ✓ File 3 uploaded successfully
+[2025-12-01T12:43:23.154Z] 
+Upload complete: 3/3 successful, 0 failed
+[2025-12-01T12:43:23.155Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T12:43:41.569Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T12:43:41.574Z] Found 3 file(s) to upload
+[2025-12-01T12:43:41.574Z] Total upload size: 7.15MB
+[2025-12-01T12:43:41.574Z] 
+--- Uploading file 1/3: عمل_فني_بلا_عنوان 19.png ---
+[2025-12-01T12:43:41.575Z] Attempting to upload: عمل_فني_بلا_عنوان 19.png (5.17MB, type: image/png)
+[2025-12-01T12:43:41.575Z] Storage mode: Supabase
+[2025-12-01T12:43:41.579Z] Uploading to Supabase: 1764593021579-987016241-19.png
+[2025-12-01T12:43:46.322Z] ✓ Supabase upload successful: 1764593021579-987016241-19.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764593021579-987016241-19.png
+[2025-12-01T12:43:46.329Z] ✓ File 1 uploaded successfully
+[2025-12-01T12:43:46.329Z] 
+--- Uploading file 2/3: عمل_فني_بلا_عنوان 20.png ---
+[2025-12-01T12:43:46.330Z] Attempting to upload: عمل_فني_بلا_عنوان 20.png (1.53MB, type: image/png)
+[2025-12-01T12:43:46.330Z] Storage mode: Supabase
+[2025-12-01T12:43:46.331Z] Uploading to Supabase: 1764593026331-303967934-20.png
+[2025-12-01T12:43:47.831Z] ✓ Supabase upload successful: 1764593026331-303967934-20.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764593026331-303967934-20.png
+[2025-12-01T12:43:47.832Z] ✓ File 2 uploaded successfully
+[2025-12-01T12:43:47.832Z] 
+--- Uploading file 3/3: عمل_فني_بلا_عنوان 21.png ---
+[2025-12-01T12:43:47.833Z] Attempting to upload: عمل_فني_بلا_عنوان 21.png (0.45MB, type: image/png)
+[2025-12-01T12:43:47.833Z] Storage mode: Supabase
+[2025-12-01T12:43:47.834Z] Uploading to Supabase: 1764593027834-11904561-21.png
+[2025-12-01T12:43:48.246Z] ✓ Supabase upload successful: 1764593027834-11904561-21.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764593027834-11904561-21.png
+[2025-12-01T12:43:48.246Z] ✓ File 3 uploaded successfully
+[2025-12-01T12:43:48.247Z] 
+Upload complete: 3/3 successful, 0 failed
+[2025-12-01T12:43:48.247Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T12:45:24.230Z] Attempting to upload: 1.png (0.27MB, type: image/png)
+[2025-12-01T12:45:24.231Z] Storage mode: Supabase
+[2025-12-01T12:45:24.232Z] Uploading to Supabase: 1764593124232-689764609-1.png
+[2025-12-01T12:45:25.514Z] ✓ Supabase upload successful: 1764593124232-689764609-1.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764593124232-689764609-1.png
+[2025-12-01T12:46:02.412Z] Attempting to upload: 5.png (0.29MB, type: image/png)
+[2025-12-01T12:46:02.414Z] Storage mode: Supabase
+[2025-12-01T12:46:02.415Z] Uploading to Supabase: 1764593162415-659262822-5.png
+[2025-12-01T12:46:03.855Z] ✓ Supabase upload successful: 1764593162415-659262822-5.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764593162415-659262822-5.png
+[2025-12-01T12:48:13.727Z] Attempting to upload: logo2.png (10.77MB, type: image/png)
+[2025-12-01T12:48:13.730Z] Upload rejected: File too large (10.77MB)
+[2025-12-01T12:48:23.072Z] Attempting to upload: عمل_فني_بلا_عنوان 15.png (0.35MB, type: image/png)
+[2025-12-01T12:48:23.073Z] Storage mode: Supabase
+[2025-12-01T12:48:23.077Z] Uploading to Supabase: 1764593303077-905837893-15.png
+[2025-12-01T12:48:23.816Z] ✓ Supabase upload successful: 1764593303077-905837893-15.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764593303077-905837893-15.png
+[2025-12-01T16:15:41.706Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T16:15:41.708Z] Found 1 file(s) to upload
+[2025-12-01T16:15:41.709Z] Total upload size: 0.33MB
+[2025-12-01T16:15:41.709Z] 
+--- Uploading file 1/1: عمل_فني_بلا_عنوان 8.png ---
+[2025-12-01T16:15:41.710Z] Attempting to upload: عمل_فني_بلا_عنوان 8.png (0.33MB, type: image/png)
+[2025-12-01T16:15:41.711Z] Storage mode: Supabase
+[2025-12-01T16:15:41.712Z] Uploading to Supabase: 1764605741712-612715549-8.png
+[2025-12-01T16:15:44.859Z] ✓ Supabase upload successful: 1764605741712-612715549-8.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764605741712-612715549-8.png
+[2025-12-01T16:15:44.861Z] ✓ File 1 uploaded successfully
+[2025-12-01T16:15:44.863Z] 
+Upload complete: 1/1 successful, 0 failed
+[2025-12-01T16:15:44.864Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T17:10:08.516Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T17:10:08.520Z] Found 7 file(s) to upload
+[2025-12-01T17:10:08.521Z] Total upload size: 9.35MB
+[2025-12-01T17:10:08.521Z] 
+--- Uploading file 1/7: عمل_فني_بلا_عنوان 15.png ---
+[2025-12-01T17:10:08.522Z] Attempting to upload: عمل_فني_بلا_عنوان 15.png (0.35MB, type: image/png)
+[2025-12-01T17:10:08.522Z] Storage mode: Supabase
+[2025-12-01T17:10:08.522Z] Uploading to Supabase: 1764609008522-934937049-15.png
+[2025-12-01T17:10:09.549Z] ✓ Supabase upload successful: 1764609008522-934937049-15.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764609008522-934937049-15.png
+[2025-12-01T17:10:09.550Z] ✓ File 1 uploaded successfully
+[2025-12-01T17:10:09.551Z] 
+--- Uploading file 2/7: عمل_فني_بلا_عنوان 16.png ---
+[2025-12-01T17:10:09.551Z] Attempting to upload: عمل_فني_بلا_عنوان 16.png (0.28MB, type: image/png)
+[2025-12-01T17:10:09.552Z] Storage mode: Supabase
+[2025-12-01T17:10:09.555Z] Uploading to Supabase: 1764609009555-502328782-16.png
+[2025-12-01T17:10:10.057Z] ✓ Supabase upload successful: 1764609009555-502328782-16.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764609009555-502328782-16.png
+[2025-12-01T17:10:10.058Z] ✓ File 2 uploaded successfully
+[2025-12-01T17:10:10.058Z] 
+--- Uploading file 3/7: عمل_فني_بلا_عنوان 17.png ---
+[2025-12-01T17:10:10.059Z] Attempting to upload: عمل_فني_بلا_عنوان 17.png (0.35MB, type: image/png)
+[2025-12-01T17:10:10.059Z] Storage mode: Supabase
+[2025-12-01T17:10:10.060Z] Uploading to Supabase: 1764609010060-712759596-17.png
+[2025-12-01T17:10:10.777Z] ✓ Supabase upload successful: 1764609010060-712759596-17.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764609010060-712759596-17.png
+[2025-12-01T17:10:10.778Z] ✓ File 3 uploaded successfully
+[2025-12-01T17:10:10.779Z] 
+--- Uploading file 4/7: عمل_فني_بلا_عنوان 18.png ---
+[2025-12-01T17:10:10.780Z] Attempting to upload: عمل_فني_بلا_عنوان 18.png (1.23MB, type: image/png)
+[2025-12-01T17:10:10.780Z] Storage mode: Supabase
+[2025-12-01T17:10:10.781Z] Uploading to Supabase: 1764609010781-567548472-18.png
+[2025-12-01T17:10:12.202Z] ✓ Supabase upload successful: 1764609010781-567548472-18.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764609010781-567548472-18.png
+[2025-12-01T17:10:12.203Z] ✓ File 4 uploaded successfully
+[2025-12-01T17:10:12.203Z] 
+--- Uploading file 5/7: عمل_فني_بلا_عنوان 19.png ---
+[2025-12-01T17:10:12.204Z] Attempting to upload: عمل_فني_بلا_عنوان 19.png (5.17MB, type: image/png)
+[2025-12-01T17:10:12.204Z] Storage mode: Supabase
+[2025-12-01T17:10:12.207Z] Uploading to Supabase: 1764609012207-35168201-19.png
+[2025-12-01T17:10:19.374Z] ✓ Supabase upload successful: 1764609012207-35168201-19.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764609012207-35168201-19.png
+[2025-12-01T17:10:19.376Z] ✓ File 5 uploaded successfully
+[2025-12-01T17:10:19.377Z] 
+--- Uploading file 6/7: عمل_فني_بلا_عنوان 20.png ---
+[2025-12-01T17:10:19.377Z] Attempting to upload: عمل_فني_بلا_عنوان 20.png (1.53MB, type: image/png)
+[2025-12-01T17:10:19.378Z] Storage mode: Supabase
+[2025-12-01T17:10:19.379Z] Uploading to Supabase: 1764609019379-538959163-20.png
+[2025-12-01T17:10:20.713Z] ✓ Supabase upload successful: 1764609019379-538959163-20.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764609019379-538959163-20.png
+[2025-12-01T17:10:20.713Z] ✓ File 6 uploaded successfully
+[2025-12-01T17:10:20.714Z] 
+--- Uploading file 7/7: عمل_فني_بلا_عنوان 21.png ---
+[2025-12-01T17:10:20.714Z] Attempting to upload: عمل_فني_بلا_عنوان 21.png (0.45MB, type: image/png)
+[2025-12-01T17:10:20.715Z] Storage mode: Supabase
+[2025-12-01T17:10:20.715Z] Uploading to Supabase: 1764609020715-556781895-21.png
+[2025-12-01T17:10:22.151Z] ✓ Supabase upload successful: 1764609020715-556781895-21.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764609020715-556781895-21.png
+[2025-12-01T17:10:22.153Z] ✓ File 7 uploaded successfully
+[2025-12-01T17:10:22.154Z] 
+Upload complete: 7/7 successful, 0 failed
+[2025-12-01T17:10:22.154Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T21:26:10.378Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T21:26:10.380Z] Found 1 file(s) to upload
+[2025-12-01T21:26:10.381Z] Total upload size: 5.17MB
+[2025-12-01T21:26:10.382Z] 
+--- Uploading file 1/1: عمل_فني_بلا_عنوان 19.png ---
+[2025-12-01T21:26:10.383Z] Attempting to upload: عمل_فني_بلا_عنوان 19.png (5.17MB, type: image/png)
+[2025-12-01T21:26:10.384Z] Storage mode: Supabase
+[2025-12-01T21:26:10.389Z] Uploading to Supabase: 1764624370388-675185687-19.png
+[2025-12-01T21:27:12.399Z] ✓ Supabase upload successful: 1764624370388-675185687-19.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764624370388-675185687-19.png
+[2025-12-01T21:27:12.400Z] ✓ File 1 uploaded successfully
+[2025-12-01T21:27:12.402Z] 
+Upload complete: 1/1 successful, 0 failed
+[2025-12-01T21:27:12.403Z] ========== uploadMultipleImages Complete ==========
+[2025-12-01T21:37:17.887Z] ========== Starting uploadMultipleImages ==========
+[2025-12-01T21:37:17.890Z] Found 1 file(s) to upload
+[2025-12-01T21:37:17.891Z] Total upload size: 0.45MB
+[2025-12-01T21:37:17.891Z] 
+--- Uploading file 1/1: عمل_فني_بلا_عنوان 21.png ---
+[2025-12-01T21:37:17.891Z] Attempting to upload: عمل_فني_بلا_عنوان 21.png (0.45MB, type: image/png)
+[2025-12-01T21:37:17.892Z] Storage mode: Supabase
+[2025-12-01T21:37:17.893Z] Uploading to Supabase: 1764625037893-550187252-21.png
+[2025-12-01T21:37:19.514Z] ✓ Supabase upload successful: 1764625037893-550187252-21.png -> https://eorwcybkbjntlfdidkjo.supabase.co/storage/v1/object/public/uploads/1764625037893-550187252-21.png
+[2025-12-01T21:37:19.516Z] ✓ File 1 uploaded successfully
+[2025-12-01T21:37:19.516Z] 
+Upload complete: 1/1 successful, 0 failed
+[2025-12-01T21:37:19.517Z] ========== uploadMultipleImages Complete ==========

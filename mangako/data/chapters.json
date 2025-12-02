@@ -1,0 +1,35 @@
+[
+  {
+    "title": "kj jhbkh",
+    "number": null,
+    "price": 10,
+    "releaseDate": "2025-11-27",
+    "isLocked": true,
+    "id": "1764235649960",
+    "createdAt": "2025-11-27T09:27:29.961Z",
+    "status": "published",
+    "pages": []
+  },
+  {
+    "title": "Test Chapter",
+    "number": 1,
+    "price": 10,
+    "releaseDate": "2025-11-27",
+    "isLocked": true,
+    "id": "1764235652234",
+    "createdAt": "2025-11-27T09:27:32.234Z",
+    "status": "published",
+    "pages": []
+  },
+  {
+    "title": " jh j ",
+    "number": null,
+    "price": 1,
+    "releaseDate": "2025-11-27",
+    "isLocked": true,
+    "id": "1764235769183",
+    "createdAt": "2025-11-27T09:29:29.183Z",
+    "status": "published",
+    "pages": []
+  }
+]
