@@ -64,8 +64,8 @@ export default function AdminStoriesPage() {
             try {
                 const data = await getStories()
                 setStories(data)
-            } catch (_error) {
-                console.error("Failed to load stories:", _error)
+            } catch (error) {
+                console.error("Failed to load stories:", error)
                 toast.error("Failed to load stories")
             } finally {
                 setLoading(false)
@@ -103,7 +103,7 @@ export default function AdminStoriesPage() {
             } else {
                 toast.error('فشل رفع الصورة: ' + (result.error || 'خطأ غير معروف'))
             }
-        } catch (_error) {
+        } catch (error) {
             toast.error('حدث خطأ أثناء رفع الصورة')
         }
         setUploading(false)
@@ -141,7 +141,7 @@ export default function AdminStoriesPage() {
             } else {
                 toast.error('فشل إنشاء القصة: ' + (result.error || 'خطأ غير معروف'))
             }
-        } catch (_error) {
+        } catch (error) {
             toast.error('حدث خطأ غير متوقع')
         }
         setCreating(false)
@@ -164,7 +164,7 @@ export default function AdminStoriesPage() {
             } else {
                 toast.error('فشل حذف القصة')
             }
-        } catch (_error) {
+        } catch (error) {
             toast.error('حدث خطأ أثناء الحذف')
         }
         setDeleting(false)
@@ -184,7 +184,7 @@ export default function AdminStoriesPage() {
             } else {
                 toast.error('فشل تحديث حالة النشر')
             }
-        } catch (_error) {
+        } catch (error) {
             toast.error('حدث خطأ أثناء تحديث الحالة')
         }
 
