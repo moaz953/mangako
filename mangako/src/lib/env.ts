@@ -8,9 +8,9 @@ const envSchema = z.object({
     NEXTAUTH_SECRET: z.string().min(32, "NEXTAUTH_SECRET must be at least 32 characters"),
     NEXTAUTH_URL: z.string().url("NEXTAUTH_URL must be a valid URL"),
 
-    // Stripe
-    STRIPE_SECRET_KEY: z.string().startsWith('sk_', "STRIPE_SECRET_KEY must start with sk_"),
-    NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: z.string().startsWith('pk_'),
+    // Stripe (optional for build, required at runtime for payment features)
+    STRIPE_SECRET_KEY: z.string().startsWith('sk_', "STRIPE_SECRET_KEY must start with sk_").optional(),
+    NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: z.string().startsWith('pk_').optional(),
     STRIPE_WEBHOOK_SECRET: z.string().optional(),
 
     // Supabase

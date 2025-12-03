@@ -6,6 +6,12 @@ let stripeInstance: Stripe | null = null
 
 function getStripeInstance(): Stripe {
     if (!stripeInstance) {
+        if (!env.STRIPE_SECRET_KEY) {
+            throw new Error(
+                'STRIPE_SECRET_KEY is required to use payment features. ' +
+                'Please add it to your .env file or set SKIP_ENV_VALIDATION=true for development without payments.'
+            )
+        }
         stripeInstance = new Stripe(env.STRIPE_SECRET_KEY, {
             apiVersion: '2025-11-17.clover',
             typescript: true,
