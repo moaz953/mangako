@@ -35,7 +35,7 @@ export default function LibraryPage() {
 
                 setBookmarks(bookmarksData as unknown as Story[])
                 setContinueReading(continueReadingData)
-            } catch (error) {
+            } catch (_error) {
                 toast.error("Failed to load library data")
             } finally {
                 setLoading(false)
@@ -60,7 +60,7 @@ export default function LibraryPage() {
             } else {
                 toast.error(result.error || "Failed to remove from favorites")
             }
-        } catch (error) {
+        } catch (_error) {
             console.error("Remove bookmark error:", error)
             toast.error("Failed to remove from favorites")
         } finally {

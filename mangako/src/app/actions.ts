@@ -386,7 +386,7 @@ export async function getChapters() {
             ...ch,
             pages: JSON.parse(ch.pages) as string[]
         }))
-        console.log(`getChapters returning ${parsedChapters.length} chapters. IDs: ${parsedChapters.map((c: any) => c.id).join(', ')}`)
+        logger.debug('getChapters', { count: parsedChapters.length, ids: parsedChapters.map((c) => c.id) })
         return parsedChapters
     } catch (error) {
         console.error("Get chapters error:", error)
@@ -396,11 +396,10 @@ export async function getChapters() {
 
 export async function getChapter(id: string) {
     try {
-        console.log(`getChapter called with id: ${id}`)
         const chapter = await prisma.chapter.findUnique({
             where: { id }
         })
-        console.log(`getChapter result for ${id}:`, chapter ? "Found" : "Not Found")
+        logger.debug('getChapter', { id, found: !!chapter })
 
         if (!chapter) return { success: false, error: "Chapter not found in database" }
 
@@ -456,7 +455,7 @@ export async function updateChapter(id: string, updates: unknown) {
         await requireAdmin()
 
         const validatedUpdates = updateChapterSchema.parse(updates)
-        console.log(`updateChapter called for ${id} with updates:`, JSON.stringify(validatedUpdates, null, 2))
+        logger.debug('updateChapter', { id, updates: validatedUpdates })
 
         const chapter = await prisma.chapter.update({
             where: { id },
@@ -470,8 +469,7 @@ export async function updateChapter(id: string, updates: unknown) {
         revalidatePath(`/manga/${chapter.storyId}`)
         revalidatePath('/admin/chapters')
 
-        logger.info("Chapter updated", { chapterId: id })
-        console.log("Chapter updated successfully:", chapter)
+        logger.info("Chapter updated", { chapterId: id, storyId: chapter.storyId })
         return { success: true, chapter }
     } catch (error) {
         if (error instanceof ZodError) {

@@ -44,7 +44,7 @@ mangako/
 │   └── types/           # TypeScript type definitions
 ├── prisma/              # Database schema and migrations
 ├── public/              # Static assets
-└── netlify.toml         # Netlify configuration
+└── vercel.json          # Vercel configuration
 ```
 
 ## 🛠️ Tech Stack
@@ -56,7 +56,7 @@ mangako/
 - **Storage**: Supabase
 - **Styling**: Tailwind CSS
 - **UI Components**: Radix UI + shadcn/ui
-- **Deployment**: Netlify
+- **Deployment**: Vercel
 
 ## 📦 Features
 
@@ -71,22 +71,29 @@ mangako/
 
 ## 🚢 Deployment
 
-This project is configured for Netlify deployment. See [Deployment Guide](./netlify-deployment.md) for detailed instructions.
+### Deploy to Vercel
 
-### Quick Deploy to Netlify
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com)
+3. Configure environment variables (see below)
+4. Deploy!
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/YOUR-USERNAME/mangako)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR-USERNAME/mangako)
 
 ### Required Environment Variables
 
-- `DATABASE_URL` - PostgreSQL connection string
+Set these in your Vercel project settings or `.env` file:
+
+- `DATABASE_URL` - PostgreSQL connection string (with pgBouncer)
 - `DIRECT_URL` - Direct PostgreSQL connection
-- `NEXTAUTH_SECRET` - Authentication secret
-- `NEXTAUTH_URL` - Site URL
+- `NEXTAUTH_SECRET` - Authentication secret (generate with `openssl rand -base64 32`)
+- `NEXTAUTH_URL` - Your site URL (e.g., `https://yourdomain.com`)
 - `STRIPE_SECRET_KEY` - Stripe secret key
 - `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` - Stripe publishable key
+- `STRIPE_WEBHOOK_SECRET` - Stripe webhook secret
 - `NEXT_PUBLIC_SUPABASE_URL` - Supabase project URL
 - `NEXT_PUBLIC_SUPABASE_ANON_KEY` - Supabase anon key
+- `SUPABASE_SERVICE_ROLE_KEY` - Supabase service role key
 
 ## 🧪 Scripts
 

@@ -402,18 +402,15 @@ export default function ChapterEditorPage() {
         }
 
         const pageUrls = pages.map(p => p.url)
-        console.log("Saving pages:", pageUrls)
 
         // Filter out blob URLs (pending uploads)
         const validUrls = pageUrls.filter(url => !url.startsWith('blob:'))
 
         if (validUrls.length !== pageUrls.length) {
-            console.warn("Some pages are still blob URLs and won't be saved:", pageUrls.filter(url => url.startsWith('blob:')))
             toast.warning("Some pages are still uploading. Only completed uploads will be saved.")
         }
 
         const result = await updateChapter(chapterId, { pages: validUrls })
-        console.log("Save result:", result)
 
         if (result.success) {
             setChapter({ ...chapter, pages: validUrls })

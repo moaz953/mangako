@@ -228,7 +228,7 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
                 toast.error('فشل إعادة الترتيب')
                 loadData() // Reload to revert
             }
-        } catch (error) {
+        } catch (_error) {
             toast.error('حدث خطأ أثناء إعادة الترتيب')
             loadData() // Reload to revert
         }
@@ -261,7 +261,7 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
             } else {
                 toast.error('فشل رفع الصورة')
             }
-        } catch (error) {
+        } catch (_error) {
             toast.error('حدث خطأ أثناء رفع الصورة')
         } finally {
             setUploading(false)
@@ -285,7 +285,7 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
             } else {
                 toast.error('فشل تحديث القصة')
             }
-        } catch (error) {
+        } catch (_error) {
             toast.error('حدث خطأ أثناء التحديث')
         }
         setUpdating(false)
@@ -301,7 +301,7 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
             } else {
                 toast.error('فشل حذف القصة')
             }
-        } catch (error) {
+        } catch (_error) {
             toast.error('حدث خطأ أثناء الحذف')
         }
         setDeletingStory(false)
@@ -338,7 +338,7 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
             } else {
                 toast.error('فشل إنشاء الفصل')
             }
-        } catch (error) {
+        } catch (_error) {
             toast.error('حدث خطأ أثناء الإنشاء')
         }
         setCreating(false)
@@ -380,7 +380,7 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
             } else {
                 toast.error('فشل تحديث الفصل')
             }
-        } catch (error) {
+        } catch (_error) {
             toast.error('حدث خطأ أثناء التحديث')
         }
         setUpdatingChapter(false)
@@ -403,7 +403,7 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
             } else {
                 toast.error('فشل حذف الفصل')
             }
-        } catch (error) {
+        } catch (_error) {
             toast.error('حدث خطأ أثناء الحذف')
         }
         setDeleting(false)
@@ -423,7 +423,7 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
             } else {
                 toast.error('فشل تحديث حالة النشر')
             }
-        } catch (error) {
+        } catch (_error) {
             toast.error('حدث خطأ')
         }
 
@@ -442,7 +442,7 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
             } else {
                 toast.error('فشل تحديث حالة النشر')
             }
-        } catch (error) {
+        } catch (_error) {
             toast.error('حدث خطأ')
         }
 

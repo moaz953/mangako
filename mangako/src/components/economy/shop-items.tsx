@@ -29,7 +29,7 @@ export function ShopItems() {
             } else {
                 toast.error(result.error || "Failed to purchase coins")
             }
-        } catch (error) {
+        } catch (_error) {
             toast.error("An unexpected error occurred")
         } finally {
             setLoading(null)

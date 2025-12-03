@@ -38,7 +38,7 @@ function validateEnv(): Env {
             NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "mock_key",
             STRIPE_WEBHOOK_SECRET: process.env.STRIPE_WEBHOOK_SECRET,
             SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY,
-            NODE_ENV: (process.env.NODE_ENV as any) || 'development',
+            NODE_ENV: (process.env.NODE_ENV as 'development' | 'production' | 'test') || 'development',
         };
     }
 

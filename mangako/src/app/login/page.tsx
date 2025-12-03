@@ -44,7 +44,7 @@ function LoginPageContent() {
                 router.push(callbackUrl)
                 router.refresh()
             }
-        } catch (err) {
+        } catch (_err) {
             setError("An error occurred. Please try again.")
             toast.error("Login error")
         } finally {
@@ -93,7 +93,7 @@ function LoginPageContent() {
                 router.push(callbackUrl)
                 router.refresh()
             }
-        } catch (err) {
+        } catch (_err) {
             setError("An error occurred. Please try again.")
             toast.error("Signup error")
         } finally {

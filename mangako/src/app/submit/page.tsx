@@ -92,7 +92,7 @@ export default function SubmitPage() {
             setStatusMessage("Done!")
             toast.success("Submission successful! We'll review your work and get back to you soon.")
             router.push("/")
-        } catch (error) {
+        } catch (_error) {
             const errorMessage = error instanceof Error ? error.message : "Please try again."
             toast.error(`Error submitting: ${errorMessage}`)
             setIsSubmitting(false)

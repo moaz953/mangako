@@ -47,7 +47,7 @@ export function UploadDiagnostics() {
                 message: envCheck.hasSupabase ? "Supabase configured" : "Using local storage",
                 details: JSON.stringify(envCheck, null, 2)
             })
-        } catch (error) {
+        } catch (_error) {
             updateTest(0, {
                 status: "error",
                 message: "Environment check failed",
@@ -69,7 +69,7 @@ export function UploadDiagnostics() {
                 message: data.canWrite ? "Local storage is writable" : "Cannot write to local storage",
                 details: JSON.stringify(data, null, 2)
             })
-        } catch (error) {
+        } catch (_error) {
             updateTest(1, {
                 status: "error",
                 message: "Could not test local storage",
@@ -105,7 +105,7 @@ export function UploadDiagnostics() {
                     details: result.error
                 })
             }
-        } catch (error) {
+        } catch (_error) {
             updateTest(2, {
                 status: "error",
                 message: "Upload test failed",

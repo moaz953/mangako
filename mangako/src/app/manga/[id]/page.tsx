@@ -56,7 +56,7 @@ export default function MangaDetailPage({ params }: { params: Promise<{ id: stri
                         }
                     }
                 }
-            } catch (error) {
+            } catch (_error) {
                 console.error("Failed to load data:", error)
             }
             setLoading(false)
@@ -89,7 +89,7 @@ export default function MangaDetailPage({ params }: { params: Promise<{ id: stri
                     toast.error(result.error || "Failed to add bookmark")
                 }
             }
-        } catch (error) {
+        } catch (_error) {
             console.error("Bookmark error:", error)
             toast.error("Failed to update bookmark")
         } finally {

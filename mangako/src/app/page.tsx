@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useSession } from "next-auth/react"
 import { Button } from "@/components/ui/button"
-import { BookOpen, Clock, ChevronRight, Star, TrendingUp, Play, Heart } from "lucide-react"
+import { BookOpen, Clock, ChevronRight, Play, Heart } from "lucide-react"
 import { ProgressBar } from "@/components/progress-bar"
 import { Badge } from "@/components/ui/badge"
 import { HeroCarouselNew } from "@/components/hero-carousel-new"
@@ -41,7 +41,7 @@ export default function Home() {
     if (latestFilter === "all") return latestChapters
 
     const now = new Date()
-    let filterDate = new Date()
+    const filterDate = new Date()
 
     switch (latestFilter) {
       case "today":
@@ -150,15 +150,15 @@ export default function Home() {
             setContinueReading(continueData)
 
             const bookmarks = await getBookmarks(session.user.id)
-            setBookmarkedStoryIds(new Set(bookmarks.map((b: any) => b.id)))
+            const bookmarkedStories = bookmarks as Array<{ id: string }>
+            setBookmarkedStoryIds(new Set(bookmarkedStories.map((b) => b.id)))
           }
         }
-      } catch (error) {
+      } catch (_error) {
         console.error("Failed to load data:", error)
       }
       setLoading(false)
     }
-    loadData()
     loadData()
   }, [session])
 
@@ -194,7 +194,7 @@ export default function Home() {
       } else {
         toast.success(isBookmarked ? "Removed from favorites" : "Added to favorites")
       }
-    } catch (error) {
+    } catch (_error) {
       console.error("Bookmark error:", error)
       // Revert on error
       setBookmarkedStoryIds(bookmarkedStoryIds)
@@ -357,7 +357,7 @@ export default function Home() {
                     key={tab.value}
                     variant={latestFilter === tab.value ? "default" : "outline"}
                     size="sm"
-                    onClick={() => setLatestFilter(tab.value as any)}
+                    onClick={() => setLatestFilter(tab.value as "all" | "today" | "week" | "month")}
                   >
                     {tab.label}
                   </Button>

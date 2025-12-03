@@ -50,7 +50,7 @@ export default function SignUpPage() {
 
             toast.success('تم إنشاء الحساب بنجاح!')
             router.push('/auth/signin')
-        } catch (error) {
+        } catch (_error) {
             toast.error('حدث خطأ أثناء إنشاء الحساب')
         } finally {
             setIsLoading(false)

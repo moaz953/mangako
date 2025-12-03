@@ -4,7 +4,7 @@ interface LogEntry {
     timestamp: string
     level: LogLevel
     message: string
-    context?: Record<string, any>
+    context?: Record<string, unknown>
     error?: {
         name: string
         message: string
@@ -17,7 +17,7 @@ class Logger {
     private log(
         level: LogLevel,
         message: string,
-        context?: Record<string, any>,
+        context?: Record<string, unknown>,
         error?: Error
     ) {
         const entry: LogEntry = {
@@ -68,7 +68,7 @@ class Logger {
      * Log informational message
      * @example logger.info('User logged in', { userId: '123' })
      */
-    info(message: string, context?: Record<string, any>) {
+    info(message: string, context?: Record<string, unknown>) {
         this.log('info', message, context)
     }
 
@@ -76,7 +76,7 @@ class Logger {
      * Log warning message
      * @example logger.warn('API rate limit approaching', { remaining: 10 })
      */
-    warn(message: string, context?: Record<string, any>) {
+    warn(message: string, context?: Record<string, unknown>) {
         this.log('warn', message, context)
     }
 
@@ -84,7 +84,7 @@ class Logger {
      * Log error with optional Error object and context
      * @example logger.error('Failed to create user', error, { email: 'test@example.com' })
      */
-    error(message: string, error?: Error, context?: Record<string, any>) {
+    error(message: string, error?: Error, context?: Record<string, unknown>) {
         this.log('error', message, context, error)
     }
 
@@ -92,7 +92,7 @@ class Logger {
      * Log debug message (only in development)
      * @example logger.debug('Query result', { rows: 5, duration: '23ms' })
      */
-    debug(message: string, context?: Record<string, any>) {
+    debug(message: string, context?: Record<string, unknown>) {
         if (process.env.NODE_ENV === 'development') {
             this.log('debug', message, context)
         }
@@ -102,15 +102,15 @@ class Logger {
      * Create a child logger with default context
      * @example const dbLogger = logger.child({ component: 'database' })
      */
-    child(defaultContext: Record<string, any>) {
+    child(defaultContext: Record<string, unknown>) {
         return {
-            info: (msg: string, ctx?: Record<string, any>) =>
+            info: (msg: string, ctx?: Record<string, unknown>) =>
                 this.info(msg, { ...defaultContext, ...ctx }),
-            warn: (msg: string, ctx?: Record<string, any>) =>
+            warn: (msg: string, ctx?: Record<string, unknown>) =>
                 this.warn(msg, { ...defaultContext, ...ctx }),
-            error: (msg: string, err?: Error, ctx?: Record<string, any>) =>
+            error: (msg: string, err?: Error, ctx?: Record<string, unknown>) =>
                 this.error(msg, err, { ...defaultContext, ...ctx }),
-            debug: (msg: string, ctx?: Record<string, any>) =>
+            debug: (msg: string, ctx?: Record<string, unknown>) =>
                 this.debug(msg, { ...defaultContext, ...ctx }),
         }
     }

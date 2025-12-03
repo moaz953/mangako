@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server'
 import prisma from '@/lib/prisma'
 import getStripeInstance from '@/lib/payment'
 import Stripe from 'stripe'
+import { logger } from '@/lib/logger'
 
 export async function POST(req: Request) {
     const body = await req.text()
@@ -17,8 +18,10 @@ export async function POST(req: Request) {
             signature,
             process.env.STRIPE_WEBHOOK_SECRET!
         )
-    } catch (error: any) {
-        return new NextResponse(`Webhook Error: ${error.message}`, { status: 400 })
+    } catch (error) {
+        const err = error as Error
+        logger.error('Stripe webhook error', err)
+        return new NextResponse(`Webhook Error: ${err.message}`, { status: 400 })
     }
 
     const session = event.data.object as Stripe.PaymentIntent
@@ -50,7 +53,7 @@ export async function POST(req: Request) {
                     }
                 })
 
-                console.log(`Successfully added ${coins} coins to user ${userId}`)
+                logger.info('Stripe payment succeeded', { userId, coins, packageId })
             } catch (error) {
                 console.error('Error updating user balance:', error)
                 return new NextResponse('Database Error', { status: 500 })

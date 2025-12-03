@@ -109,7 +109,7 @@ function ReaderContent() {
                     }
                 }
 
-            } catch (error) {
+            } catch (_error) {
                 console.error("Failed to load chapter:", error)
                 toast.error("Failed to load chapter")
             } finally {
@@ -238,7 +238,7 @@ function ReaderContent() {
             } else {
                 toast.error(result.error || "Failed to unlock chapter")
             }
-        } catch (error) {
+        } catch (_error) {
             console.error(error)
             toast.error("An error occurred")
         } finally {

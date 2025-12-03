@@ -23,12 +23,19 @@ const defaultOptions: Required<RetryOptions> = {
     backoffMultiplier: 2
 }
 
+interface UploadError {
+    errorType?: string
+    error?: string
+    message?: string
+}
+
 /**
  * Determine if an error is retryable
  */
-function isRetryableError(error: any): boolean {
-    const errorType = error?.errorType
-    const errorMessage = error?.error || error?.message || ''
+function isRetryableError(error: unknown): boolean {
+    const uploadError = error as UploadError
+    const errorType = uploadError?.errorType
+    const errorMessage = uploadError?.error || uploadError?.message || ''
 
     // Don't retry validation errors (file too large, wrong type, etc.)
     if (errorType === 'validation') {
@@ -72,7 +79,7 @@ export async function retryWithBackoff<T>(
     options: RetryOptions = {}
 ): Promise<RetryResult<T>> {
     const opts = { ...defaultOptions, ...options }
-    let lastError: any
+    let lastError: unknown
     let delay = opts.initialDelay
 
     for (let attempt = 1; attempt <= opts.maxRetries + 1; attempt++) {
@@ -99,9 +106,10 @@ export async function retryWithBackoff<T>(
         }
     }
 
+    const uploadError = lastError as UploadError
     return {
         success: false,
-        error: lastError?.error || lastError?.message || 'Unknown error',
+        error: uploadError?.error || uploadError?.message || 'Unknown error',
         attempts: opts.maxRetries + 1
     }
 }
@@ -109,8 +117,13 @@ export async function retryWithBackoff<T>(
 /**
  * Retry a file upload specifically
  */
+interface UploadResult {
+    success: boolean
+    url: string
+}
+
 export async function retryFileUpload(
-    uploadFn: () => Promise<any>,
+    uploadFn: () => Promise<UploadResult>,
     options: RetryOptions = {}
 ): Promise<RetryResult<{ url: string }>> {
     return retryWithBackoff(async () => {

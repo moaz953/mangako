@@ -36,8 +36,8 @@ export default function AdminDashboard() {
                     totalUsers: 0, // Placeholder - implement getUsers() action later
                     totalCoins: 0 // Placeholder - implement getTotalCoins() action later
                 })
-            } catch (error) {
-                console.error("Failed to load admin stats:", error)
+            } catch (_error) {
+                console.error("Failed to load admin stats:", _error)
             }
             setLoading(false)
         }

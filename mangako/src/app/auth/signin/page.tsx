@@ -32,7 +32,7 @@ export default function SignInPage() {
                 router.push('/admin')
                 router.refresh()
             }
-        } catch (error) {
+        } catch (_error) {
             toast.error('حدث خطأ أثناء تسجيل الدخول')
         } finally {
             setIsLoading(false)

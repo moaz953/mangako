@@ -8,7 +8,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Badge } from "@/components/ui/badge"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from "@/components/ui/dialog"
 import { toast } from "sonner"
-import { Loader2, Search, Filter, Eye, Check, X, Trash2, Mail, AlertTriangle } from "lucide-react"
+import { Loader2, Search, Filter, Eye, Check, X, Trash2, Mail } from "lucide-react"
 import Image from "next/image"
 
 interface Submission {
@@ -26,7 +26,6 @@ interface Submission {
 
 export default function SubmissionsPage() {
     const [submissions, setSubmissions] = useState<Submission[]>([])
-    const [selectedSubmission, setSelectedSubmission] = useState<Submission | null>(null)
     const [updating, setUpdating] = useState<string | null>(null)
     const [deleteDialogOpen, setDeleteDialogOpen] = useState(false)
     const [submissionToDelete, setSubmissionToDelete] = useState<string | null>(null)
@@ -48,12 +47,7 @@ export default function SubmissionsPage() {
         fetchSubmissions()
     }, [])
 
-    const loadSubmissions = async () => {
-        setLoading(true)
-        const data = await getSubmissions()
-        setSubmissions(data)
-        setLoading(false)
-    }
+
 
     const updateStatus = async (id: string, status: "approved" | "rejected") => {
         setUpdating(id)
@@ -67,7 +61,7 @@ export default function SubmissionsPage() {
             } else {
                 toast.error('Failed to update status')
             }
-        } catch (error) {
+        } catch (_error) {
             toast.error('An error occurred')
         }
         setUpdating(null)
@@ -90,7 +84,7 @@ export default function SubmissionsPage() {
             } else {
                 toast.error('Failed to delete submission')
             }
-        } catch (error) {
+        } catch (_error) {
             toast.error('An error occurred')
         }
         setDeleting(false)
@@ -211,7 +205,6 @@ export default function SubmissionsPage() {
                                                         <Button
                                                             variant="ghost"
                                                             size="icon"
-                                                            onClick={() => setSelectedSubmission(submission)}
                                                         >
                                                             <Eye className="w-4 h-4" />
                                                         </Button>
