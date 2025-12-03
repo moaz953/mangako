@@ -17,7 +17,7 @@ import { useApp } from "@/lib/store"
 import { useSession } from "next-auth/react"
 import { updateReadingHistory, getChapterProgress, unlockChapter as unlockChapterAction } from "@/app/actions"
 import { toast } from "sonner"
-import type { Chapter } from "@/types/models"
+import type { Chapter, SessionUser } from "@/types/models"
 
 interface StoryInfo {
     id: string
@@ -44,7 +44,7 @@ function ReaderContent() {
     const initialPageParam = searchParams.get('page')
     const { data: session, update: updateSession } = useSession()
     // Cast user to include coins
-    const user = session?.user as { name?: string | null, email?: string | null, image?: string | null, coins?: number, id: string } | undefined
+    const user = session?.user as SessionUser | undefined
 
     // We still use useApp for rating for now, but coins/unlocks should be server-side
     const { rateChapter } = useApp()

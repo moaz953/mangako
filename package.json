@@ -8,7 +8,5 @@
         "start": "cd mangako && npm run start",
         "lint": "cd mangako && npm run lint"
     },
-    "dependencies": {
-        "@netlify/next-runtime": "^5.0.0-alpha.25"
-    }
+    "dependencies": {}
 }

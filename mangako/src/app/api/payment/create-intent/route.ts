@@ -3,6 +3,7 @@ import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createPaymentIntent } from '@/lib/payment'
 import { z } from 'zod'
+import { logger } from "@/lib/logger"
 
 const requestSchema = z.object({
     packageId: z.string()
@@ -34,7 +35,7 @@ export async function POST(req: NextRequest) {
 
         return NextResponse.json(paymentIntent)
     } catch (error) {
-        console.error('Payment intent creation error:', error)
+        logger.error('Payment intent creation error', error as Error)
         return NextResponse.json(
             { error: 'Internal server error' },
             { status: 500 }

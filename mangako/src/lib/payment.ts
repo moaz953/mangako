@@ -1,5 +1,6 @@
 import Stripe from 'stripe'
 import { env } from './env'
+import { logger } from './logger'
 
 // Lazy initialization of Stripe to avoid build-time errors
 let stripeInstance: Stripe | null = null
@@ -97,7 +98,7 @@ export async function verifyPayment(paymentIntentId: string) {
         const paymentIntent = await stripe.paymentIntents.retrieve(paymentIntentId)
         return paymentIntent.status === 'succeeded'
     } catch (error) {
-        console.error('Error verifying payment:', error)
+        logger.error('Error verifying payment', error as Error)
         return false
     }
 }

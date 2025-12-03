@@ -10,11 +10,11 @@ import { getBookmarks, removeBookmark, getContinueReading } from "@/app/actions"
 import { ProgressBar } from "@/components/progress-bar"
 import { toast } from "sonner"
 
-import { Story, ContinueReadingItem } from "@/types/models"
+import { Story, ContinueReadingItem, BookmarkedStory } from "@/types/models"
 
 export default function LibraryPage() {
     const { data: session } = useSession()
-    const [bookmarks, setBookmarks] = useState<Story[]>([])
+    const [bookmarks, setBookmarks] = useState<BookmarkedStory[]>([])
     const [continueReading, setContinueReading] = useState<ContinueReadingItem[]>([])
     const [loading, setLoading] = useState(true)
     const [removingId, setRemovingId] = useState<string | null>(null)
@@ -33,7 +33,7 @@ export default function LibraryPage() {
                     getContinueReading(session.user.id, 6)
                 ])
 
-                setBookmarks(bookmarksData as unknown as Story[])
+                setBookmarks(bookmarksData as BookmarkedStory[])
                 setContinueReading(continueReadingData)
             } catch (_error) {
                 toast.error("Failed to load library data")

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { getStories, getChapters } from "../actions"
+import { getAdminStats } from "../actions"
 import { AdminOverview } from "@/components/admin/admin-overview"
 import { Skeleton } from "@/components/ui/skeleton"
 
@@ -24,18 +24,8 @@ export default function AdminDashboard() {
     useEffect(() => {
         const loadStats = async () => {
             try {
-                const [stories, chapters] = await Promise.all([
-                    getStories(),
-                    getChapters()
-                ])
-
-                // Calculate stats
-                setStats({
-                    totalStories: stories.filter((s: any) => s.status === "published").length,
-                    totalChapters: chapters.filter((c: any) => c.status === "published").length,
-                    totalUsers: 0, // Placeholder - implement getUsers() action later
-                    totalCoins: 0 // Placeholder - implement getTotalCoins() action later
-                })
+                const data = await getAdminStats()
+                setStats(data)
             } catch (_error) {
                 console.error("Failed to load admin stats:", _error)
             }

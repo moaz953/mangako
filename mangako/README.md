@@ -67,6 +67,7 @@ mangako/
 - 📚 Chapter management and reading progress
 - 🎯 Admin panel for content management
 - 🖼️ Image upload to Supabase Storage
+- 📝 Standardized logging system
 - 📱 Fully responsive design
 
 ## 🚢 Deployment

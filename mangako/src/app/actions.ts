@@ -250,7 +250,7 @@ export async function uploadMultipleImages(formData: FormData): Promise<Multiple
 
         if (detailedErrors.length > 0) {
             await log(`Failed files details: ${JSON.stringify(detailedErrors, null, 2)}`)
-            console.error("Some uploads failed:", detailedErrors)
+            logger.error("Some uploads failed", new Error(JSON.stringify(detailedErrors)))
         }
 
         await log("========== uploadMultipleImages Complete ==========")
@@ -269,7 +269,7 @@ export async function uploadMultipleImages(formData: FormData): Promise<Multiple
     } catch (error) {
         const err = error as Error
         await log(`Critical error in uploadMultipleImages: ${err.message}\nStack: ${err.stack}`)
-        console.error("Multiple upload error:", error)
+        logger.error("Multiple upload error", error as Error)
         return {
             success: false,
             error: err.message || "Upload failed",
@@ -319,7 +319,7 @@ export async function getSubmissions() {
             submittedAt: sub.submittedAt.toISOString()
         }))
     } catch (error) {
-        console.error("Get submissions error:", error)
+        logger.error("Get submissions error", error as Error)
         return []
     }
 }
@@ -389,7 +389,7 @@ export async function getChapters() {
         logger.debug('getChapters', { count: parsedChapters.length, ids: parsedChapters.map((c) => c.id) })
         return parsedChapters
     } catch (error) {
-        console.error("Get chapters error:", error)
+        logger.error("Get chapters error", error as Error)
         return []
     }
 }
@@ -412,11 +412,11 @@ export async function getChapter(id: string) {
                 }
             }
         } catch (e) {
-            console.error("JSON parse error for chapter pages:", e)
+            logger.error("JSON parse error for chapter pages", e as Error)
             return { success: false, error: "Failed to parse chapter pages" }
         }
     } catch (error) {
-        console.error("Get chapter error:", error)
+        logger.error("Get chapter error", error as Error)
         return { success: false, error: "Database error: " + (error instanceof Error ? error.message : String(error)) }
     }
 }
@@ -441,7 +441,7 @@ export async function createChapter(chapterData: unknown) {
         logger.info("Chapter created", { chapterId: chapter.id, storyId: validatedData.storyId })
         return { success: true, chapter }
     } catch (error) {
-        console.error("FULL CREATE CHAPTER ERROR:", error)
+        logger.error("FULL CREATE CHAPTER ERROR", error as Error)
         if (error instanceof ZodError) {
             return { success: false, error: error.issues[0].message }
         }
@@ -547,7 +547,7 @@ export async function getStories() {
         })
         return stories
     } catch (error) {
-        console.error("Get stories error:", error)
+        logger.error("Get stories error", error as Error)
         return []
     }
 }
@@ -735,6 +735,10 @@ export async function getBookmarks(userId: string) {
 
         return bookmarks.map(b => ({
             ...b.story,
+            chapters: b.story.chapters.map(c => ({
+                ...c,
+                pages: JSON.parse(c.pages)
+            })),
             bookmarkedAt: b.createdAt
         }))
     } catch (error) {
@@ -802,6 +806,41 @@ export async function updateReadingHistory(userId: string, chapterId: string, pr
     }
 }
 
+// ========== Admin Stats ==========
+
+export async function getAdminStats() {
+    try {
+        await requireAdmin()
+
+        const [storiesCount, chaptersCount, usersCount, totalCoins] = await Promise.all([
+            prisma.story.count({ where: { status: 'published' } }),
+            prisma.chapter.count({ where: { status: 'published' } }),
+            prisma.user.count(),
+            prisma.user.aggregate({
+                _sum: {
+                    coins: true
+                }
+            })
+        ])
+
+        return {
+            totalStories: storiesCount,
+            totalChapters: chaptersCount,
+            totalUsers: usersCount,
+            totalCoins: totalCoins._sum.coins || 0
+        }
+    } catch (error) {
+        logger.error("Get admin stats error", error as Error)
+        return {
+            totalStories: 0,
+            totalChapters: 0,
+            totalUsers: 0,
+            totalCoins: 0
+        }
+    }
+}
+
+
 export async function getReadingHistory(userId: string, storyId?: string) {
     try {
         const history = await prisma.readingHistory.findMany({
@@ -830,7 +869,7 @@ export async function getReadingHistory(userId: string, storyId?: string) {
             story: h.chapter.story
         }))
     } catch (error) {
-        console.error("Get reading history error:", error)
+        logger.error("Get reading history error", error as Error)
         return []
     }
 }
@@ -858,7 +897,7 @@ export async function getLastRead(userId: string, storyId: string) {
             lastReadAt: history.updatedAt
         }
     } catch (error) {
-        console.error("Get last read error:", error)
+        logger.error("Get last read error", error as Error)
         return null
     }
 }
@@ -890,7 +929,7 @@ export async function getContinueReading(userId: string, limit: number = 10) {
             }
         })
     } catch (error) {
-        console.error("Get continue reading error:", error)
+        logger.error("Get continue reading error", error as Error)
         return []
     }
 }
@@ -904,7 +943,7 @@ export async function getChapterProgress(userId: string, chapterId: string) {
         })
         return { progress: history?.progress || 0 }
     } catch (error) {
-        console.error("Get chapter progress error:", error)
+        logger.error("Get chapter progress error", error as Error)
         return { progress: 0 }
     }
 }

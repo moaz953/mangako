@@ -1,6 +1,7 @@
 import { getStories } from "@/app/actions"
 import { NextRequest, NextResponse } from "next/server"
 import prisma from "@/lib/prisma"
+import { logger } from "@/lib/logger"
 
 export const dynamic = 'force-dynamic'
 
@@ -32,7 +33,7 @@ export async function GET(request: NextRequest) {
         const stories = await getStories()
         return NextResponse.json(stories)
     } catch (error) {
-        console.error("Stories API error:", error)
+        logger.error("Stories API error", error as Error)
         return NextResponse.json([], { status: 500 })
     }
 }

@@ -92,6 +92,19 @@ export interface BookmarkWithStory extends Bookmark {
     story: Story
 }
 
+export interface BookmarkedStory extends Story {
+    bookmarkedAt: Date
+}
+
+export interface SessionUser {
+    id: string
+    name?: string | null
+    email?: string | null
+    image?: string | null
+    coins: number
+    role: UserRole
+}
+
 // ========== Input Types (for forms and API) ==========
 
 export interface CreateStoryInput {

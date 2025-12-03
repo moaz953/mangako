@@ -1,5 +1,6 @@
 import { getChapters, getChapter } from "@/app/actions"
 import { NextRequest, NextResponse } from "next/server"
+import { logger } from "@/lib/logger"
 
 export const dynamic = 'force-dynamic'
 
@@ -29,7 +30,7 @@ export async function GET(request: NextRequest) {
 
         return NextResponse.json(chapters)
     } catch (error) {
-        console.error("Chapters API error:", error)
+        logger.error("Chapters API error", error as Error)
         return NextResponse.json([], { status: 500 })
     }
 }
