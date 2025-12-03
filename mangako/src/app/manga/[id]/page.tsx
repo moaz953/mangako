@@ -57,7 +57,7 @@ export default function MangaDetailPage({ params }: { params: Promise<{ id: stri
                     }
                 }
             } catch (_error) {
-                console.error("Failed to load data:", error)
+                console.error("Failed to load data:", _error)
             }
             setLoading(false)
         }
@@ -90,7 +90,7 @@ export default function MangaDetailPage({ params }: { params: Promise<{ id: stri
                 }
             }
         } catch (_error) {
-            console.error("Bookmark error:", error)
+            console.error("Bookmark error:", _error)
             toast.error("Failed to update bookmark")
         } finally {
             setBookmarkLoading(false)

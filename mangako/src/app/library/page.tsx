@@ -60,7 +60,7 @@ export default function LibraryPage() {
             } else {
                 toast.error(result.error || "Failed to remove from favorites")
             }
-        } catch (_error) {
+        } catch (error) {
             console.error("Remove bookmark error:", error)
             toast.error("Failed to remove from favorites")
         } finally {

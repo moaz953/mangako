@@ -154,7 +154,7 @@ export default function Home() {
             setBookmarkedStoryIds(new Set(bookmarkedStories.map((b) => b.id)))
           }
         }
-      } catch (_error) {
+      } catch (error) {
         console.error("Failed to load data:", error)
       }
       setLoading(false)
@@ -194,7 +194,7 @@ export default function Home() {
       } else {
         toast.success(isBookmarked ? "Removed from favorites" : "Added to favorites")
       }
-    } catch (_error) {
+    } catch (error) {
       console.error("Bookmark error:", error)
       // Revert on error
       setBookmarkedStoryIds(bookmarkedStoryIds)

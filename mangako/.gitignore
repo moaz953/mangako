@@ -51,3 +51,23 @@ next-env.d.ts
 *.log
 server-debug.log
 build_log.txt
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS files
+Thumbs.db
+
+# Test files
+.test/
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

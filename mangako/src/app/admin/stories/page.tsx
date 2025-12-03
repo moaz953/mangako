@@ -65,7 +65,7 @@ export default function AdminStoriesPage() {
                 const data = await getStories()
                 setStories(data)
             } catch (_error) {
-                console.error("Failed to load stories:", error)
+                console.error("Failed to load stories:", _error)
                 toast.error("Failed to load stories")
             } finally {
                 setLoading(false)

@@ -110,7 +110,7 @@ function ReaderContent() {
                 }
 
             } catch (_error) {
-                console.error("Failed to load chapter:", error)
+                console.error("Failed to load chapter:", _error)
                 toast.error("Failed to load chapter")
             } finally {
                 setLoading(false)
@@ -239,7 +239,7 @@ function ReaderContent() {
                 toast.error(result.error || "Failed to unlock chapter")
             }
         } catch (_error) {
-            console.error(error)
+            console.error(_error)
             toast.error("An error occurred")
         } finally {
             setUnlocking(false)

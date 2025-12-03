@@ -51,7 +51,7 @@ export function UploadDiagnostics() {
             updateTest(0, {
                 status: "error",
                 message: "Environment check failed",
-                details: error instanceof Error ? error.message : String(error)
+                details: _error instanceof Error ? _error.message : String(_error)
             })
         }
 
@@ -73,7 +73,7 @@ export function UploadDiagnostics() {
             updateTest(1, {
                 status: "error",
                 message: "Could not test local storage",
-                details: error instanceof Error ? error.message : String(error)
+                details: _error instanceof Error ? _error.message : String(_error)
             })
         }
 
@@ -109,7 +109,7 @@ export function UploadDiagnostics() {
             updateTest(2, {
                 status: "error",
                 message: "Upload test failed",
-                details: error instanceof Error ? error.message : String(error)
+                details: _error instanceof Error ? _error.message : String(_error)
             })
         }
 

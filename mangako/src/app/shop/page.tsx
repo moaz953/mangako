@@ -58,7 +58,7 @@ export default function ShopPage() {
                 document.getElementById('checkout-section')?.scrollIntoView({ behavior: 'smooth' })
             }, 100)
         } catch (_error) {
-            console.error(error)
+            console.error(_error)
             toast.error("Failed to prepare checkout. Please try again.")
             setSelectedPackage(null)
         } finally {
