@@ -1,6 +1,6 @@
 "use server"
 
-import { writeFile, mkdir, appendFile } from "fs/promises"
+import { writeFile, mkdir } from "fs/promises"
 import { join } from "path"
 import prisma from "@/lib/prisma"
 import { revalidatePath } from "next/cache"
@@ -30,17 +30,6 @@ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 const supabase = createClient(supabaseUrl, supabaseKey)
 
-const LOG_FILE = join(process.cwd(), "server-debug.log")
-
-async function log(message: string) {
-    const timestamp = new Date().toISOString()
-    const logMessage = `[${timestamp}] ${message}\n`
-    try {
-        await appendFile(LOG_FILE, logMessage)
-    } catch (e) {
-        console.error("Failed to write to log file", e)
-    }
-}
 
 export async function uploadImage(formData: FormData): Promise<UploadResult> {
     try {
@@ -48,7 +37,6 @@ export async function uploadImage(formData: FormData): Promise<UploadResult> {
 
         // Validate file exists
         if (!file) {
-            await log("Upload error: No file provided in formData")
             return { success: false, error: "No file uploaded", errorType: "validation" }
         }
 
@@ -56,11 +44,9 @@ export async function uploadImage(formData: FormData): Promise<UploadResult> {
         const fileSize = file.size
         const fileType = file.type
         const fileName = file.name
-        await log(`Attempting to upload: ${fileName} (${(fileSize / 1024 / 1024).toFixed(2)}MB, type: ${fileType})`)
 
         // Validate file size
         if (fileSize > MAX_FILE_SIZE) {
-            await log(`Upload rejected: File too large (${(fileSize / 1024 / 1024).toFixed(2)}MB)`)
             return {
                 success: false,
                 error: `File too large: ${(fileSize / 1024 / 1024).toFixed(2)}MB (max 10MB)`,
@@ -70,7 +56,6 @@ export async function uploadImage(formData: FormData): Promise<UploadResult> {
 
         // Validate file type
         if (!ALLOWED_IMAGE_TYPES.includes(fileType)) {
-            await log(`Upload rejected: Invalid file type (${fileType})`)
             return {
                 success: false,
                 error: `Invalid file type: ${fileType}. Allowed: PNG, JPG, WEBP`,
@@ -80,7 +65,6 @@ export async function uploadImage(formData: FormData): Promise<UploadResult> {
 
         // Check if Supabase is configured
         const isSupabaseConfigured = supabaseUrl && supabaseKey && !supabaseUrl.includes('xxxx')
-        await log(`Storage mode: ${isSupabaseConfigured ? 'Supabase' : 'Local'}`)
 
         if (!isSupabaseConfigured) {
             logger.warn("Supabase not configured, falling back to local storage")
@@ -97,31 +81,25 @@ export async function uploadImage(formData: FormData): Promise<UploadResult> {
                 // Ensure directory exists
                 try {
                     await mkdir(uploadDir, { recursive: true })
-                    await log(`Upload directory ensured: ${uploadDir}`)
                 } catch (e) {
                     const error = e as Error
-                    await log(`Directory creation warning: ${error.message}`)
                     // Directory might already exist, continue
                 }
 
                 // Test write permissions by attempting to write
                 const filePath = join(uploadDir, filename)
-                await log(`Writing file to: ${filePath}`)
 
                 try {
                     await writeFile(filePath, buffer)
                 } catch (writeError) {
                     const error = writeError as Error
-                    await log(`File write error: ${error.message}`)
                     throw new Error(`Cannot write to uploads directory: ${error.message}`)
                 }
 
                 logger.info("Image uploaded successfully to local storage", { filename, path: filePath })
-                await log(`✓ Local upload successful: ${filename}`)
                 return { success: true, url: `/uploads/${filename}`, storageType: "local" }
             } catch (localError) {
                 const error = localError as Error
-                await log(`Local storage upload failed: ${error.message}`)
                 return {
                     success: false,
                     error: `Local storage error: ${error.message}`,
@@ -139,7 +117,6 @@ export async function uploadImage(formData: FormData): Promise<UploadResult> {
             const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1E9)}`
             const filename = `${uniqueSuffix}-${file.name.replace(/[^a-zA-Z0-9.-]/g, "")}`
 
-            await log(`Uploading to Supabase: ${filename}`)
 
             // Upload to Supabase Storage
             const { data, error } = await supabase
@@ -151,7 +128,6 @@ export async function uploadImage(formData: FormData): Promise<UploadResult> {
                 })
 
             if (error) {
-                await log(`Supabase upload error: ${error.message}`)
                 logger.error("Supabase upload error", error)
 
                 // Try to provide more specific error messages
@@ -178,12 +154,10 @@ export async function uploadImage(formData: FormData): Promise<UploadResult> {
                 .getPublicUrl(filename)
 
             logger.info("Image uploaded successfully to Supabase", { filename, publicUrl })
-            await log(`✓ Supabase upload successful: ${filename} -> ${publicUrl}`)
 
             return { success: true, url: publicUrl, storageType: "supabase" }
         } catch (supabaseError) {
             const error = supabaseError as Error
-            await log(`Supabase operation failed: ${error.message}`)
             return {
                 success: false,
                 error: `Supabase operation failed: ${error.message}`,
@@ -193,7 +167,6 @@ export async function uploadImage(formData: FormData): Promise<UploadResult> {
     } catch (error) {
         const err = error as Error
         logger.error("Unexpected upload error", err)
-        await log(`Unexpected upload error: ${err.message}\nStack: ${err.stack}`)
         return {
             success: false,
             error: `Failed to upload: ${err.message}`,
@@ -203,20 +176,16 @@ export async function uploadImage(formData: FormData): Promise<UploadResult> {
 }
 
 export async function uploadMultipleImages(formData: FormData): Promise<MultipleUploadResult> {
-    await log("========== Starting uploadMultipleImages ==========")
     try {
         const files = formData.getAll("files") as File[]
 
         if (!files || files.length === 0) {
-            await log("Error: No files provided in uploadMultipleImages")
             return { success: false, error: "No files provided", urls: [], detailedErrors: [] }
         }
 
-        await log(`Found ${files.length} file(s) to upload`)
 
         // Log summary of files
         const totalSize = files.reduce((acc, f) => acc + f.size, 0)
-        await log(`Total upload size: ${(totalSize / 1024 / 1024).toFixed(2)}MB`)
 
         const urls: string[] = []
         const detailedErrors: UploadErrorDetail[] = []
@@ -224,7 +193,6 @@ export async function uploadMultipleImages(formData: FormData): Promise<Multiple
 
         for (let i = 0; i < files.length; i++) {
             const file = files[i]
-            await log(`\n--- Uploading file ${i + 1}/${files.length}: ${file.name} ---`)
 
             const fileFormData = new FormData()
             fileFormData.append("file", file)
@@ -233,7 +201,6 @@ export async function uploadMultipleImages(formData: FormData): Promise<Multiple
             if (result.success && result.url) {
                 urls.push(result.url)
                 successCount++
-                await log(`✓ File ${i + 1} uploaded successfully`)
             } else {
                 const errorDetail: UploadErrorDetail = {
                     fileName: file.name,
@@ -241,19 +208,15 @@ export async function uploadMultipleImages(formData: FormData): Promise<Multiple
                     errorType: result.errorType
                 }
                 detailedErrors.push(errorDetail)
-                await log(`✗ File ${i + 1} failed: ${result.error}`)
             }
         }
 
         const summary = `Upload complete: ${successCount}/${files.length} successful, ${detailedErrors.length} failed`
-        await log(`\n${summary}`)
 
         if (detailedErrors.length > 0) {
-            await log(`Failed files details: ${JSON.stringify(detailedErrors, null, 2)}`)
             logger.error("Some uploads failed", new Error(JSON.stringify(detailedErrors)))
         }
 
-        await log("========== uploadMultipleImages Complete ==========")
 
         return {
             success: urls.length > 0,
@@ -268,7 +231,6 @@ export async function uploadMultipleImages(formData: FormData): Promise<Multiple
         }
     } catch (error) {
         const err = error as Error
-        await log(`Critical error in uploadMultipleImages: ${err.message}\nStack: ${err.stack}`)
         logger.error("Multiple upload error", error as Error)
         return {
             success: false,
@@ -574,7 +536,6 @@ export async function createStory(storyData: unknown) {
         }
         logger.error("Create story error", error as Error)
         // Log the full error for debugging
-        await log(`Create story failed: ${error instanceof Error ? error.message : String(error)}`)
         return { success: false, error: `Failed to create story: ${error instanceof Error ? error.message : 'Unknown error'}` }
     }
 }
