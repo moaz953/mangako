@@ -303,7 +303,7 @@ export default function ChapterEditorPage() {
                 }))
 
                 // Show summary toast
-                const summary = (result as any).summary
+                const summary = result.summary as { successful: number; total: number; failed: number } | undefined
                 if (summary) {
                     if (summary.failed > 0) {
                         toast.warning(`${summary.successful}/${summary.total} pages uploaded. ${summary.failed} failed.`)
@@ -315,8 +315,8 @@ export default function ChapterEditorPage() {
                 }
 
                 // Store detailed errors if any
-                if ((result as any).detailedErrors) {
-                    setUploadErrors((result as any).detailedErrors)
+                if (result.detailedErrors) {
+                    setUploadErrors(result.detailedErrors)
                 }
 
                 // Save to DB immediately with the new URLs
@@ -339,8 +339,8 @@ export default function ChapterEditorPage() {
                 })))
 
                 // Store detailed errors
-                if ((result as any).detailedErrors) {
-                    setUploadErrors((result as any).detailedErrors)
+                if (result.detailedErrors) {
+                    setUploadErrors(result.detailedErrors)
                 }
             }
         } catch (error) {

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Plus, Edit, Trash2, Eye, Pencil } from "lucide-react"
+import { Plus, Edit, Trash2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -18,14 +18,24 @@ import { Badge } from "@/components/ui/badge"
 import { Switch } from "@/components/ui/switch"
 import { getChapters, createChapter, deleteChapter, publishChapter, getStories } from "@/app/actions"
 import Link from "next/link"
+import type { Story } from "@prisma/client"
+
+interface Chapter {
+    id: string
+    storyId: string
+    number: number
+    title: string | null
+    pages: string[]
+    status: string
+}
 
 export default function AdminChaptersPage() {
-    const [chapters, setChapters] = useState<any[]>([])
+    const [chapters, setChapters] = useState<Chapter[]>([])
     const [loading, setLoading] = useState(true)
     const [dialogOpen, setDialogOpen] = useState(false)
     const [selectedChapters, setSelectedChapters] = useState<Set<string>>(new Set())
     const [isProcessing, setIsProcessing] = useState(false)
-    const [stories, setStories] = useState<any[]>([])
+    const [stories, setStories] = useState<Story[]>([])
     const [newChapter, setNewChapter] = useState({
         title: "",
         number: "1",
@@ -138,7 +148,7 @@ export default function AdminChaptersPage() {
 
     const filteredChapters = chapters.filter(chapter => {
         const matchesSearch =
-            chapter.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            (chapter.title?.toLowerCase().includes(searchQuery.toLowerCase()) ?? false) ||
             chapter.number.toString().includes(searchQuery)
 
         const matchesStory = selectedStoryFilter === "all" || chapter.storyId === selectedStoryFilter

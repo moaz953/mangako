@@ -61,7 +61,7 @@ export default function SubmissionsPage() {
             } else {
                 toast.error('Failed to update status')
             }
-        } catch (_error) {
+        } catch {
             toast.error('An error occurred')
         }
         setUpdating(null)
@@ -84,7 +84,7 @@ export default function SubmissionsPage() {
             } else {
                 toast.error('Failed to delete submission')
             }
-        } catch (_error) {
+        } catch {
             toast.error('An error occurred')
         }
         setDeleting(false)
