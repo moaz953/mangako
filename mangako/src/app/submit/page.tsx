@@ -195,13 +195,18 @@ export default function SubmitPage() {
 
                             {/* Synopsis */}
                             <div className="space-y-2">
-                                <Label htmlFor="synopsis">Synopsis</Label>
+                                <div className="flex items-center justify-between">
+                                    <Label htmlFor="synopsis">Synopsis</Label>
+                                    <span className="text-xs text-zinc-500">
+                                        {formData.synopsis.length} / 5 minimum
+                                    </span>
+                                </div>
                                 <Textarea
                                     id="synopsis"
-                                    placeholder="Describe your story in 2-3 paragraphs..."
+                                    placeholder="A brief summary of your manga story (minimum 5 characters)"
                                     value={formData.synopsis}
                                     onChange={(e) => setFormData({ ...formData, synopsis: e.target.value })}
-                                    className="bg-zinc-950/50 border-zinc-800 min-h-[120px]"
+                                    className="min-h-[120px] bg-zinc-950/50 border-zinc-800"
                                     required
                                 />
                             </div>

@@ -46,7 +46,7 @@ export const createSubmissionSchema = z.object({
     email: z.string().email("Invalid email address"),
     title: z.string().min(1, "Title is required"),
     genre: z.string().min(1, "Genre is required"),
-    synopsis: z.string().min(10, "Synopsis is too short"),
+    synopsis: z.string().min(5, "Synopsis must be at least 5 characters"),
     portfolioUrl: z.string()
         .optional()
         .transform(val => val === "" ? undefined : val)
