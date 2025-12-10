@@ -55,7 +55,7 @@ export async function POST(req: Request) {
 
                 logger.info('Stripe payment succeeded', { userId, coins, packageId })
             } catch (error) {
-                console.error('Error updating user balance:', error)
+                logger.error('Error updating user balance', error as Error)
                 return new NextResponse('Database Error', { status: 500 })
             }
         }

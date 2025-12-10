@@ -4,7 +4,30 @@ import { Settings as SettingsIcon, Trash2, HardDrive } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { useState } from "react"
-import { clearLocalStorage, getLocalStorageSize } from "@/lib/storage-utils"
+
+// Inline storage utilities
+function clearLocalStorage() {
+    if (typeof window !== 'undefined') {
+        const confirmClear = window.confirm(
+            'Clear all data? This will remove all chapters, ratings, and user data.'
+        )
+        if (confirmClear) {
+            localStorage.clear()
+            window.location.reload()
+        }
+    }
+}
+
+function getLocalStorageSize() {
+    if (typeof window === 'undefined') return '0'
+    let total = 0
+    for (const key in localStorage) {
+        if (localStorage.hasOwnProperty(key)) {
+            total += localStorage[key].length + key.length
+        }
+    }
+    return (total / 1024).toFixed(2) // KB
+}
 
 export default function SettingsPage() {
     // Use lazy initialization instead of useEffect to avoid cascading renders

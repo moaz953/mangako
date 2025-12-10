@@ -2,20 +2,7 @@ import { getServerSession } from "next-auth"
 import { authOptions } from "@/lib/auth"
 import { logger } from "@/lib/logger"
 import { cookies } from "next/headers"
-import { appendFile } from "fs/promises"
-import { join } from "path"
 
-const LOG_FILE = join(process.cwd(), "server-debug.log")
-
-async function log(message: string) {
-    const timestamp = new Date().toISOString()
-    const logMessage = `[${timestamp}] [AUTH] ${message}\n`
-    try {
-        await appendFile(LOG_FILE, logMessage)
-    } catch (e) {
-        console.error("Failed to write to log file", e)
-    }
-}
 
 export async function getSession() {
     // Ensure cookies are available for Server Actions
@@ -42,7 +29,6 @@ export async function requireAuth() {
 
     if (!user) {
         logger.warn("Unauthenticated access attempt")
-        await log("requireAuth failed: No user found in session")
         throw new Error("Unauthorized: You must be logged in")
     }
 
@@ -58,7 +44,6 @@ export async function requireAdmin() {
 
     if (user.role !== "admin") {
         logger.warn("Unauthorized admin access attempt", { userId: user.id, role: user.role })
-        await log(`requireAdmin failed: User ${user.id} has role '${user.role}', expected 'admin'`)
         throw new Error("Forbidden: You do not have permission to perform this action")
     }
 
