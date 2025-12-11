@@ -1,5 +1,4 @@
 import Stripe from 'stripe'
-import { env } from './env'
 import { logger } from './logger'
 
 // Lazy initialization of Stripe to avoid build-time errors
@@ -7,13 +6,17 @@ let stripeInstance: Stripe | null = null
 
 function getStripeInstance(): Stripe {
     if (!stripeInstance) {
-        if (!env.STRIPE_SECRET_KEY) {
+        const stripeKey = process.env.STRIPE_SECRET_KEY
+
+        if (!stripeKey) {
+            logger.warn('STRIPE_SECRET_KEY not configured - payment features will be disabled')
             throw new Error(
                 'STRIPE_SECRET_KEY is required to use payment features. ' +
-                'Please add it to your .env file or set SKIP_ENV_VALIDATION=true for development without payments.'
+                'Please configure it in your Vercel environment variables.'
             )
         }
-        stripeInstance = new Stripe(env.STRIPE_SECRET_KEY, {
+
+        stripeInstance = new Stripe(stripeKey, {
             apiVersion: '2025-11-17.clover',
             typescript: true,
         })
