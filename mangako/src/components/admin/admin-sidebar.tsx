@@ -22,7 +22,7 @@ import { useState } from "react"
 interface NavItem {
     title: string
     href: string
-    icon: any
+    icon: React.ElementType
 }
 
 const navItems: NavItem[] = [

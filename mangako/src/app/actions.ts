@@ -3,6 +3,7 @@
 import { writeFile, mkdir } from "fs/promises"
 import { join } from "path"
 import prisma from "@/lib/prisma"
+import { Submission, Story, Chapter } from "@prisma/client"
 import { revalidatePath } from "next/cache"
 import { logger } from "@/lib/logger"
 import {
@@ -274,10 +275,9 @@ export async function getSubmissions() {
         })
 
 
-        // Parse JSON fields and convert Date to ISO string
-        return (submissions as any[]).map((sub) => ({
+        return (submissions as unknown as Submission[]).map((sub) => ({
             ...sub,
-            samplePages: JSON.parse(sub.samplePages) as string[],
+            samplePages: JSON.parse(sub.samplePages as string) as string[],
             submittedAt: sub.submittedAt.toISOString()
         }))
     } catch (error) {

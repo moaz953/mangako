@@ -40,7 +40,7 @@ export default function SubmissionsPage() {
         async function fetchSubmissions() {
             setLoading(true)
             const data = await getSubmissions()
-            setSubmissions(data)
+            setSubmissions(data as unknown as Submission[])
             setLoading(false)
         }
 

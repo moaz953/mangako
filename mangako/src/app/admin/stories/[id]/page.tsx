@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import { Story, Chapter } from "@prisma/client"
 import { ArrowLeft, Plus, Edit, Trash2, Upload, Loader2, GripVertical } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -51,7 +52,21 @@ import {
 import { CSS } from '@dnd-kit/utilities'
 
 
-function SortableChapterItem({ chapter, onEdit, onDelete, onPublish, publishing }: any) {
+
+
+interface ExtendedChapter extends Omit<Chapter, 'pages'> {
+    pages: string[]
+}
+
+interface SortableChapterItemProps {
+    chapter: ExtendedChapter
+    onEdit: (chapter: ExtendedChapter) => void
+    onDelete: (id: string) => void
+    onPublish: (id: string, status: string) => void
+    publishing: string | null
+}
+
+function SortableChapterItem({ chapter, onEdit, onDelete, onPublish, publishing }: SortableChapterItemProps) {
     const {
         attributes,
         listeners,
@@ -92,7 +107,7 @@ function SortableChapterItem({ chapter, onEdit, onDelete, onPublish, publishing 
                             </Badge>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                            {JSON.parse(chapter.pages || '[]').length} pages
+                            {chapter.pages.length} pages
                         </p>
                     </div>
                 </div>
@@ -139,8 +154,8 @@ function SortableChapterItem({ chapter, onEdit, onDelete, onPublish, publishing 
 export default function StoryDetailPage({ params }: { params: { id: string } }) {
     const { id: storyId } = params
     const router = useRouter()
-    const [story, setStory] = useState<any>(null)
-    const [chapters, setChapters] = useState<any[]>([])
+    const [story, setStory] = useState<Story | null>(null)
+    const [chapters, setChapters] = useState<ExtendedChapter[]>([])
     const [loading, setLoading] = useState(true)
     const [dialogOpen, setDialogOpen] = useState(false)
     const [uploading, setUploading] = useState(false)
@@ -154,7 +169,7 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
     const [deleting, setDeleting] = useState(false)
     const [deletingStory, setDeletingStory] = useState(false)
     const [editChapterDialogOpen, setEditChapterDialogOpen] = useState(false)
-    const [chapterToEdit, setChapterToEdit] = useState<any>(null)
+    const [chapterToEdit, setChapterToEdit] = useState<ExtendedChapter | null>(null)
     const [updatingChapter, setUpdatingChapter] = useState(false)
     const [newChapter, setNewChapter] = useState({
         title: "",
@@ -177,8 +192,8 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
     const loadData = async () => {
         setLoading(true)
         const stories = await getStories()
-        const found = stories.find((s: any) => s.id === storyId)
-        setStory(found)
+        const found = stories.find((s: Story) => s.id === storyId)
+        setStory(found || null)
         if (found) {
             setEditFormData({
                 title: found.title || "",
@@ -187,9 +202,11 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
             })
         }
 
-        const allChapters = await getChapters()
-        const storyChapters = allChapters.filter((ch: any) => ch.storyId === storyId)
-        setChapters(storyChapters.sort((a: any, b: any) => a.number - b.number))
+
+        const allChapters = await getChapters() as unknown as ExtendedChapter[]
+        const storyChapters = allChapters.filter((ch) => ch.storyId === storyId)
+
+        setChapters(storyChapters.sort((a, b) => a.number - b.number))
         setLoading(false)
     }
 
@@ -256,7 +273,9 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
 
             if (result.success && result.url) {
                 await updateStory(storyId, { coverImage: result.url })
-                setStory({ ...story, coverImage: result.url })
+                if (story) {
+                    setStory({ ...story, coverImage: result.url })
+                }
                 toast.success('تم تحديث صورة الغلاف!')
             } else {
                 toast.error('فشل رفع الصورة')
@@ -279,7 +298,9 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
             const result = await updateStory(storyId, editFormData)
 
             if (result.success) {
-                setStory({ ...story, ...editFormData })
+                if (story) {
+                    setStory({ ...story, ...editFormData })
+                }
                 setEditDialogOpen(false)
                 toast.success('تم تحديث القصة بنجاح!')
             } else {
@@ -344,22 +365,18 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
         setCreating(false)
     }
 
-    const handleEditChapter = (chapter: any) => {
-        setChapterToEdit({
-            id: chapter.id,
-            title: chapter.title || "",
-            number: chapter.number.toString()
-        })
+    const handleEditChapter = (chapter: ExtendedChapter) => {
+        setChapterToEdit(chapter)
         setEditChapterDialogOpen(true)
     }
 
     const handleUpdateChapter = async () => {
-        if (!chapterToEdit?.title.trim()) {
+        if (!chapterToEdit || !chapterToEdit.title) {
             toast.error('يرجى إدخال عنوان الفصل')
             return
         }
 
-        const chapterNum = parseFloat(chapterToEdit.number)
+        const chapterNum = typeof chapterToEdit.number === 'string' ? parseFloat(chapterToEdit.number) : chapterToEdit.number
         if (isNaN(chapterNum) || chapterNum < 1) {
             toast.error('يرجى إدخال رقم فصل صحيح')
             return
@@ -412,6 +429,7 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
     }
 
     const handleStoryPublishToggle = async () => {
+        if (!story) return
         const publish = story.status !== "published"
         setPublishingStory(true)
 
@@ -419,7 +437,9 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
             const result = await publishStory(storyId, publish)
             if (result.success) {
                 toast.success(publish ? 'تم نشر القصة!' : 'تم إلغاء نشر القصة')
-                setStory({ ...story, status: publish ? "published" : "draft" })
+                if (story) {
+                    setStory({ ...story, status: publish ? "published" : "draft" })
+                }
             } else {
                 toast.error('فشل تحديث حالة النشر')
             }
@@ -772,7 +792,15 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
                                 id="edit-ch-number"
                                 type="number"
                                 value={chapterToEdit?.number || ""}
-                                onChange={(e) => setChapterToEdit({ ...chapterToEdit, number: e.target.value })}
+                                onChange={(e) => {
+                                    if (chapterToEdit) {
+                                        setChapterToEdit({
+                                            ...chapterToEdit,
+                                            pages: chapterToEdit.pages || [],
+                                            number: parseInt(e.target.value) || 0
+                                        })
+                                    }
+                                }}
                             />
                         </div>
                         <div className="space-y-2">
@@ -780,7 +808,15 @@ export default function StoryDetailPage({ params }: { params: { id: string } }) 
                             <Input
                                 id="edit-ch-title"
                                 value={chapterToEdit?.title || ""}
-                                onChange={(e) => setChapterToEdit({ ...chapterToEdit, title: e.target.value })}
+                                onChange={(e) => {
+                                    if (chapterToEdit) {
+                                        setChapterToEdit({
+                                            ...chapterToEdit,
+                                            pages: chapterToEdit.pages || [],
+                                            title: e.target.value
+                                        })
+                                    }
+                                }}
                             />
                         </div>
                     </div>

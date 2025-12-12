@@ -21,17 +21,16 @@ export default function AdminLayout({
     useEffect(() => {
         // Check authentication (skip for login page)
         if (pathname === "/admin/login") {
-            setIsLoading(false)
             return
         }
 
         const auth = localStorage.getItem("adminAuth")
         if (auth === "true") {
-            setIsAuthenticated(true)
-            setIsLoading(false)
+            if (!isAuthenticated) setIsAuthenticated(true)
         } else {
             router.push("/admin/login")
         }
+        setIsLoading(false)
     }, [pathname, router])
 
     // Loading state

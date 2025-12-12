@@ -24,7 +24,7 @@ export async function GET(request: NextRequest) {
 
         // Filter by storyId if provided
         if (storyId) {
-            const filtered = chapters.filter((c: any) => c.storyId === storyId)
+            const filtered = chapters.filter((c: { storyId: string }) => c.storyId === storyId)
             return NextResponse.json(filtered)
         }
 

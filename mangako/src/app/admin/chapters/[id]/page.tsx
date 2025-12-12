@@ -737,7 +737,7 @@ export default function ChapterEditorPage() {
                     <AlertDialogHeader>
                         <AlertDialogTitle>Publish Chapter?</AlertDialogTitle>
                         <AlertDialogDescription>
-                            This will make Chapter {chapter.number} publicly available. Make sure you've:
+                            This will make Chapter {chapter.number} publicly available. Make sure you&apos;ve:
                             <ul className="list-disc pl-6 mt-2 space-y-1">
                                 <li>Uploaded all pages ({pages.length} pages ready)</li>
                                 <li>Set the correct chapter number and title</li>
