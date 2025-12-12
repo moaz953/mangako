@@ -51,6 +51,7 @@ next-env.d.ts
 *.log
 server-debug.log
 build_log.txt
+lint-report.json
 
 # IDE and Editor files
 .vscode/
