@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "cd mangako && npm run dev",
-        "build": "cd mangako && npm run build",
+        "build": "cd mangako && npm install && npm run build",
         "start": "cd mangako && npm run start",
         "lint": "cd mangako && npm run lint"
     },
